@@ -1,7 +1,7 @@
 var data, averages, svg, x, y, g, breedSvg, breedX, breedY, breedG, breedData;
 
 // Load data and create bar chart
-d3.csv("petfinder_data_modified.csv").then(function(loadedData) {
+d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
   data = loadedData; // Make data global
   averages = d3.nest()
     .key(function(d) { return d.species; })
@@ -54,20 +54,23 @@ d3.csv("petfinder_data_modified.csv").then(function(loadedData) {
       .attr("text-anchor", "end")
       .text("Count of ID");
 
-  g.selectAll(".bar")
-    .data(averages)
-    .enter().append("rect")
+      g.selectAll(".bar")
+      .data(averages)
+      .enter().append("rect")
       .attr("class", "bar")
       .attr("x", function(d) { return x(d.key); })
       .attr("y", function(d) { return y(d.value.id_count); })
       .attr("width", x.bandwidth())
       .attr("height", function(d) { return height - y(d.value.id_count); })
-      .append("title")  // Append a title element to each rect
-      .text(function(d) { return "ID Count: " + d.value.id_count; })  // Set the title text as the id count
+      .on('mouseover', function() { d3.select(this).style('fill', 'darkblue'); })
+      .on('mouseout', function() { d3.select(this).style('fill', 'steelblue'); })
       .on('click', function(d) { 
           // When a bar is clicked, call a function to create a new chart 
           createBreedChart(d.key); 
-      });
+      })
+      .append("title")  // Append a title element to each rect
+      .text(function(d) { return "ID Count: " + d.value.id_count; });  // Set the title text as the id count
+    
 });
 
 function createBreedChart(species) {
@@ -133,34 +136,55 @@ function submitAnswer() {
     var catsAnswer = document.querySelector('input[name="cats"]:checked') ? document.querySelector('input[name="cats"]:checked').value : null;
     var dogsAnswer = document.querySelector('input[name="dogs"]:checked') ? document.querySelector('input[name="dogs"]:checked').value : null;
     var coatAnswers = Array.from(document.querySelectorAll('input[name="coat"]:checked')).map(e => e.value);
-  
+    var attrAnswers = Array.from(document.querySelectorAll('input[name="attr"]:checked')).map(e => e.value);
+    var sizeRange = document.getElementById('sizeRange').value;
+
     // Clear the old bars
     g.selectAll(".bar").remove();
-  
+
     var filteredData = data;
-  
+
     // Filter based on children answer
     if (childrenAnswer === "yes") {
       // Remove species with average children value less than 0.5
       filteredData = filteredData.filter(function(d) { return d.children >= 0.5; });
     }
-  
+
     // Filter based on cats answer
     if (catsAnswer === "yes") {
       // Remove species with average cats value less than 0.2
       filteredData = filteredData.filter(function(d) { return d.cats >= 0.2; });
     }
-  
+
     // Filter based on dogs answer
     if (dogsAnswer === "yes") {
       // Remove species with average dogs value less than 0.2
       filteredData = filteredData.filter(function(d) { return d.dogs >= 0.2; });
     }
-  
+
     // Filter based on coat answer
     if (coatAnswers.length > 0) {
       // Filter the data for the selected coat types
       filteredData = filteredData.filter(function(d) { return coatAnswers.includes(d.coat); });
+    }
+
+    // Filter based on attribute answer
+    if (attrAnswers.length > 0) {
+        // Filter the data for the selected attributes
+        filteredData = filteredData.filter(function(d) { 
+        return attrAnswers.every(attr => d[attr] != 0);  // Filter out if any selected attribute equals 0
+        });
+    }
+
+    // Filter the data for the selected size
+    if (sizeRange == 30) {
+      filteredData = filteredData.filter(function(d) { return d.size >= 28 && d.size <= 30; });
+    } else if (sizeRange == 28) {
+      filteredData = filteredData.filter(function(d) { return d.size >= 20 && d.size < 28; });
+    } else if (sizeRange == 20) {
+      filteredData = filteredData.filter(function(d) { return d.size >= 6 && d.size < 20; });
+    } else if (sizeRange == 10) {
+      filteredData = filteredData.filter(function(d) { return d.size >= 0 && d.size < 6; });
     }
   
     // Generate averages
@@ -189,7 +213,8 @@ function submitAnswer() {
         .attr("height", function(d) { return height - y(d.value.id_count); })
         .append("title")  // Append a title element to each rect
         .text(function(d) { return "ID Count: " + d.value.id_count; });  // Set the title text as the id count
-  }
+}
+
   
   
   
