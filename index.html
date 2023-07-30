@@ -5,121 +5,134 @@
   <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
-
+    <div style="padding-top: 10px;">Answer few questions below to find out the best pet for you</div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 0;">
+        <button id="previousButton" onclick="previousQuestion()" disabled>Previous</button>
+        <div class="navbar">
+            <ul>
+                <li id="circle0" onclick="goToQuestion(0)"></li>
+                <li id="circle1" onclick="goToQuestion(1)"></li>
+                <li id="circle2" onclick="goToQuestion(2)"></li>
+                <li id="circle3" onclick="goToQuestion(3)"></li>
+                <li id="circle4" onclick="goToQuestion(4)"></li>
+                <li id="circle5" onclick="goToQuestion(5)"></li>
+                <li id="circle6" onclick="goToQuestion(6)"></li>
+            </ul>
+        </div>          
+        <button id="nextButton" onclick="nextQuestion()">Next</button>
+    </div>
     <div style="display: flex; justify-content: space-between; align-items: center;">
-    <div>
-        <button id="previousButton" onclick="previousQuestion()" disabled>Previous Question</button>
-        <button id="nextButton" onclick="nextQuestion()">Next Question</button>
-      </div>
-    <div class="question-container">
-        <h2>Do you have children?</h2>
-        <p class="subtext">Your answer will help us understand the environment the pet will live in. Some pets are more suitable for households with children.</p>
-        <div class="option-container">
-        <input type="radio" id="children_yes" name="children" value="yes" onclick="submitAnswer()">
-        <label for="children_yes">Yes</label>
-        <input type="radio" id="children_no" name="children" value="no" onclick="submitAnswer()">
-        <label for="children_no">No</label>
+        <div class="question-container">
+            <h2>Do you have children?</h2>
+            <p class="subtext">Your answer will help us understand the environment the pet will live in. Some pets are more suitable for households with children.</p>
+            <div class="option-container">
+            <input type="radio" id="children_yes" name="children" value="yes" onclick="submitAnswer()">
+            <label for="children_yes">Yes</label>
+            <input type="radio" id="children_no" name="children" value="no" onclick="submitAnswer()">
+            <label for="children_no">No</label>
+            </div>
         </div>
-    </div>
 
-    <div class="question-container question-hidden">
-        <h2>Do you have a cat?</h2>
-        <p class="subtext">This information is useful to know because some pets get along better with cats than others.</p>
-        <div class="option-container">
-        <input type="radio" id="cats_yes" name="cats" value="yes" onclick="submitAnswer()">
-        <label for="cats_yes">Yes</label>
-        <input type="radio" id="cats_no" name="cats" value="no" onclick="submitAnswer()">
-        <label for="cats_no">No</label>
-        </div>
-    </div>
+            <div class="question-container question-hidden">
+                <h2>Do you have a cat?</h2>
+                <p class="subtext">This information is useful to know because some pets get along better with cats than others.</p>
+                <div class="option-container">
+                <input type="radio" id="cats_yes" name="cats" value="yes" onclick="submitAnswer()">
+                <label for="cats_yes">Yes</label>
+                <input type="radio" id="cats_no" name="cats" value="no" onclick="submitAnswer()">
+                <label for="cats_no">No</label>
+                </div>
+            </div>
 
-    <div class="question-container question-hidden">
-        <h2>Do you have a dog?</h2>
-        <p class="subtext">This information is necessary as some pets might not be comfortable around dogs.</p>
-        <div class="option-container">
-        <input type="radio" id="dogs_yes" name="dogs" value="yes" onclick="submitAnswer()">
-        <label for="dogs_yes">Yes</label>
-        <input type="radio" id="dogs_no" name="dogs" value="no" onclick="submitAnswer()">
-        <label for="dogs_no">No</label>
-        </div>
-    </div>
+            <div class="question-container question-hidden">
+                <h2>Do you have a dog?</h2>
+                <p class="subtext">This information is necessary as some pets might not be comfortable around dogs.</p>
+                <div class="option-container">
+                <input type="radio" id="dogs_yes" name="dogs" value="yes" onclick="submitAnswer()">
+                <label for="dogs_yes">Yes</label>
+                <input type="radio" id="dogs_no" name="dogs" value="no" onclick="submitAnswer()">
+                <label for="dogs_no">No</label>
+                </div>
+            </div>
 
-    <div class="question-container question-hidden">
-        <h2>What type of coat do you prefer for your pet? (Select all that apply)</h2>
-        <p class="subtext">The type of coat can affect the amount of grooming required and can also impact allergies.</p>
-        <div class="option-container">
-        <input type="checkbox" id="coat_short" name="coat" value="Short" onclick="submitAnswer()">
-        <label for="coat_short">Short</label>
-        
-        <input type="checkbox" id="coat_medium" name="coat" value="Medium" onclick="submitAnswer()">
-        <label for="coat_medium">Medium</label>
-        
-        <input type="checkbox" id="coat_long" name="coat" value="Long" onclick="submitAnswer()">
-        <label for="coat_long">Long</label>
+            <div class="question-container question-hidden">
+                <h2>What type of coat do you prefer for your pet? (Select all that apply)</h2>
+                <p class="subtext">The type of coat can affect the amount of grooming required and can also impact allergies.</p>
+                <div class="option-container">
+                <input type="checkbox" id="coat_short" name="coat" value="Short" onclick="submitAnswer()">
+                <label for="coat_short">Short</label>
+                
+                <input type="checkbox" id="coat_medium" name="coat" value="Medium" onclick="submitAnswer()">
+                <label for="coat_medium">Medium</label>
+                
+                <input type="checkbox" id="coat_long" name="coat" value="Long" onclick="submitAnswer()">
+                <label for="coat_long">Long</label>
 
-        <input type="checkbox" id="coat_scale" name="coat" value="Scale" onclick="submitAnswer()">
-        <label for="coat_scale">Scale</label>
-        
-        <input type="checkbox" id="coat_unknown" name="coat" value="Unknown" onclick="submitAnswer()">
-        <label for="coat_unknown">Unknown</label>
-        </div>
-    </div>
+                <input type="checkbox" id="coat_scale" name="coat" value="Scale" onclick="submitAnswer()">
+                <label for="coat_scale">Scale</label>
+                
+                <input type="checkbox" id="coat_unknown" name="coat" value="Unknown" onclick="submitAnswer()">
+                <label for="coat_unknown">Unknown</label>
+                </div>
+            </div>
 
-    <div class="question-container question-hidden">
-        <h2>What attributes do you prefer in your pet? (Select all that apply)</h2>
-        <p class="subtext">Your preferences will help us match you with a pet that fits your lifestyle and personality.</p>
-        <div class="option-container">
-        <input type="checkbox" id="attr_affectionate" name="attr" value="Affectionate" onclick="submitAnswer()">
-        <label for="attr_affectionate">Affectionate</label>
-    
-        <input type="checkbox" id="attr_curious" name="attr" value="Curious" onclick="submitAnswer()">
-        <label for="attr_curious">Curious</label>
-    
-        <input type="checkbox" id="attr_smart" name="attr" value="Smart" onclick="submitAnswer()">
-        <label for="attr_smart">Smart</label>
-    
-        <input type="checkbox" id="attr_funny" name="attr" value="Funny" onclick="submitAnswer()">
-        <label for="attr_funny">Funny</label>
-    
-        <input type="checkbox" id="attr_gentle" name="attr" value="Gentle" onclick="submitAnswer()">
-        <label for="attr_gentle">Gentle</label>
-    
-        <input type="checkbox" id="attr_quiet" name="attr" value="Quiet" onclick="submitAnswer()">
-        <label for="attr_quiet">Quiet</label>
-    
-        <input type="checkbox" id="attr_brave" name="attr" value="Brave" onclick="submitAnswer()">
-        <label for="attr_brave">Brave</label>
-        </div>
-    </div>
+            <div class="question-container question-hidden">
+                <h2>What attributes do you prefer in your pet? (Select all that apply)</h2>
+                <p class="subtext">Your preferences will help us match you with a pet that fits your lifestyle and personality.</p>
+                <div class="option-container">
+                <input type="checkbox" id="attr_affectionate" name="attr" value="Affectionate" onclick="submitAnswer()">
+                <label for="attr_affectionate">Affectionate</label>
+            
+                <input type="checkbox" id="attr_curious" name="attr" value="Curious" onclick="submitAnswer()">
+                <label for="attr_curious">Curious</label>
+            
+                <input type="checkbox" id="attr_smart" name="attr" value="Smart" onclick="submitAnswer()">
+                <label for="attr_smart">Smart</label>
+            
+                <input type="checkbox" id="attr_funny" name="attr" value="Funny" onclick="submitAnswer()">
+                <label for="attr_funny">Funny</label>
+            
+                <input type="checkbox" id="attr_gentle" name="attr" value="Gentle" onclick="submitAnswer()">
+                <label for="attr_gentle">Gentle</label>
+            
+                <input type="checkbox" id="attr_quiet" name="attr" value="Quiet" onclick="submitAnswer()">
+                <label for="attr_quiet">Quiet</label>
+            
+                <input type="checkbox" id="attr_brave" name="attr" value="Brave" onclick="submitAnswer()">
+                <label for="attr_brave">Brave</label>
+                </div>
+            </div>
 
-    <div class="question-container question-hidden">
-        <h2>What size pet are you looking for?</h2>
-        <p class="subtext">The size of the pet often determines the amount of space needed, the type of exercise required, and the overall care cost.</p>
-        <div class="option-container">
-        <select id="sizeRange" onchange="submitAnswer()">
-            <option value="any">Any size</option>
-            <option value="30">Extra Large</option>
-            <option value="28">Large</option>
-            <option value="20">Medium</option>
-            <option value="10">Small</option>
-        </select>
-        </div>
-    </div>  
+            <div class="question-container question-hidden">
+                <h2>What size pet are you looking for?</h2>
+                <p class="subtext">The size of the pet often determines the amount of space needed, the type of exercise required, and the overall care cost.</p>
+                <div class="option-container">
+                <select id="sizeRange" onchange="submitAnswer()">
+                    <option value="any">Any size</option>
+                    <option value="30">Extra Large</option>
+                    <option value="28">Large</option>
+                    <option value="20">Medium</option>
+                    <option value="10">Small</option>
+                </select>
+                </div>
+            </div>  
 
-    <div class="question-container">
-        <h2>Select pet's age range</h2>
-        <p class="subtext">The age of the pet can influence the amount of training and medical care required.</p>
-        <div class="option-container">
-            <input type="range" min="1" max="4" value="2" class="slider" id="ageRange" onchange="submitAnswer()">
-            <p>Age: <span id="ageValue">2</span></p>
-        </div>
-    </div>
-
-    <div id="top3">
-        <p>You top 3 choice:</p>
-    </div>
+            <div class="question-container">
+                <h2>Select pet's age range</h2>
+                <p class="subtext">The age of the pet can influence the amount of training and medical care required.</p>
+                <div class="option-container">
+                    <input type="range" min="1" max="4" value="2" class="slider" id="ageRange" onchange="submitAnswer()">
+                    <p>Age: <span id="ageValue">2</span></p>
+                </div>
+            </div>
+            <div>
+                <p style="padding-left: 10px;">Your top 3 choice:</p>
+                <div id="top3">
+                </div>
+            </div>
   </div>
 
+  <div>Number of pets for each species in this data set (Click on the bar to look at different breeds)</div>
   <div style="display: flex;">
     <div id="scene1">
       <svg width="640" height="400"></svg>

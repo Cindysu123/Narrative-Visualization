@@ -117,8 +117,6 @@ function createBreedChart(species) {
     .rollup(function(v) { return v.length; })  
     .entries(breedData);
 
-  var totalCount = d3.sum(breedData, function(d) { return d.value; }); // calculate total count
-
   var width = 520;
   var height = 380;
   var radius = Math.min(width, height) / 2.8;
@@ -148,7 +146,7 @@ function createBreedChart(species) {
     .innerRadius(0)
     .outerRadius(radius + 10);
 
-  var pie = d3.pie()
+    var pie = d3.pie()
     .value(function(d) { return d.value; })
     .sort(function(a, b) { return b.value - a.value; });
   
@@ -157,7 +155,7 @@ function createBreedChart(species) {
     .domain(breedData)
     .range(pieColors);
 
-  var path = g.selectAll('path')
+    var path = g.selectAll('path')
     .data(pie(breedData))
     .enter()
     .append('path')
@@ -176,7 +174,7 @@ function createBreedChart(species) {
     });
 
   path.append('title')
-    .text(function(d) { return d.data.key + ": " + ((d.data.value / totalCount) * 100).toFixed(2) + "%"; }); // display percentage
+    .text(function(d) { return d.data.key + ": " + d.data.value; });
 
   path.on("mouseover", function() {
     d3.select(this)
@@ -230,7 +228,6 @@ function createBreedChart(species) {
   .style("font-size", "16px") 
   
 }
-
 
 function submitAnswer() {
   var childrenAnswer = document.querySelector('input[name="children"]:checked') ? document.querySelector('input[name="children"]:checked').value : null;
@@ -334,4 +331,5 @@ function submitAnswer() {
   if (filteredAverages.length > 0) {
     createBreedChart(filteredAverages[0].key);
   }
+
 }
