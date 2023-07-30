@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <style>
+    .bar {
+      fill: steelblue;
+    }
+    .bar:hover {
+      fill: darkblue;
+      cursor: pointer;
+    }
+    .axis text {
+      font: 10px sans-serif;
+    }
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+    .x.axis path {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Do you have children?</h2>
+
+  <input type="radio" id="children_yes" name="children" value="yes" onclick="submitAnswer()">
+  <label for="children_yes">Yes</label><br>
+
+  <input type="radio" id="children_no" name="children" value="no" onclick="submitAnswer()">
+  <label for="children_no">No</label><br>
+
+  <h2>Do you have a cat?</h2>
+
+  <input type="radio" id="cats_yes" name="cats" value="yes" onclick="submitAnswer()">
+  <label for="cats_yes">Yes</label><br>
+
+  <input type="radio" id="cats_no" name="cats" value="no" onclick="submitAnswer()">
+  <label for="cats_no">No</label><br>
+
+  <h2>Do you have a dog?</h2>
+
+  <input type="radio" id="dogs_yes" name="dogs" value="yes" onclick="submitAnswer()">
+  <label for="dogs_yes">Yes</label><br>
+
+  <input type="radio" id="dogs_no" name="dogs" value="no" onclick="submitAnswer()">
+  <label for="dogs_no">No</label><br>
+
+  <div id="scene1">
+    <svg width="600" height="400"></svg>
+  </div>
+
+  <!-- External JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

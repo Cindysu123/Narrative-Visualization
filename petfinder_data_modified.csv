@@ -1,0 +1,801 @@
+id,name,species,breed,age,gender,size,coat,house_trained,special_needs,children,dogs,cats,state,Affectionate,Curious,Smart,Funny,Gentle,Quiet,Brave
+65669065,Montana,Dog,Cairn Terrier,4,Male,1,Unknown,1,0,1,1,1,CA,0,0,0,1,1,1,1
+65669051,Franky,Dog,Dachshund,1,Male,2,Short,0,0,1,1,1,CA,1,0,0,1,0,1,0
+65669050,Moose,Dog,Mixed Breed,1,Male,1,Unknown,0,0,1,1,1,FL,0,0,0,0,0,1,0
+65669049,Octopus,Dog,Mixed Breed,1,Male,1,Unknown,0,0,0,1,0,FL,1,0,1,1,0,1,0
+65669048,Marshmallow (Jackson Bassetts 3),Dog,Basset Hound,1,Female,1,Short,0,0,1,1,0,OH,1,0,0,1,1,1,0
+65669047,Ike,Dog,English Springer Spaniel,2,Male,2,Unknown,0,0,1,1,1,NC,0,0,0,0,0,1,0
+65669037,Provolone,Dog,Terrier,3,Male,1,Short,0,0,1,1,1,NJ,0,1,0,1,0,0,0
+65669036,MAJOR,Dog,German Shepherd Dog,2,Male,2,Medium,0,0,0,1,1,FL,0,1,1,1,1,0,1
+65669008,Hank,Dog,Terrier,1,Male,1,Short,0,0,1,1,1,AZ,0,1,1,0,1,0,0
+65669032,Dog,Dog,Labrador Retriever,2,Male,4,Short,0,0,0,1,1,CA,1,1,0,0,0,0,0
+65669033,Dog,Dog,German Shepherd Dog,2,Female,3,Medium,0,0,1,1,1,CA,0,1,1,1,0,0,1
+65669034,Dog,Dog,Australian Cattle Dog / Blue Heeler,1,Female,1,Short,0,0,0,1,1,CA,1,0,0,0,0,0,0
+65669035,Dog,Dog,German Shepherd Dog,1,Male,1,Medium,0,0,0,1,0,CA,0,0,0,1,0,1,0
+65669009,Dog,Dog,Labrador Retriever,2,Male,3,Short,0,0,1,1,1,CA,1,1,0,0,1,0,0
+65669010,Dog,Dog,Australian Cattle Dog / Blue Heeler,3,Female,2,Short,0,0,0,0,0,CA,1,0,1,1,0,0,1
+65669011,Dog,Dog,German Shepherd Dog,1,Female,1,Medium,0,0,0,0,0,CA,1,0,0,0,0,0,1
+65669012,Dog,Dog,Pit Bull Terrier,3,Male,2,Short,0,0,0,1,1,CA,0,1,0,1,0,0,0
+65669013,Dog,Dog,Chihuahua,2,Female,1,Short,0,0,1,0,0,CA,0,0,1,0,1,1,0
+65669014,Dog,Dog,Pit Bull Terrier,2,Male,3,Short,0,0,0,0,1,CA,0,1,1,1,0,0,1
+65669015,Dog,Dog,Pit Bull Terrier,2,Female,2,Short,0,0,0,0,0,CA,1,0,1,1,0,0,0
+65669016,Dog,Dog,German Shepherd Dog,1,Male,1,Medium,0,0,0,0,0,CA,0,1,0,1,1,1,1
+65669018,Dog,Dog,German Shepherd Dog,1,Female,1,Medium,0,0,0,1,1,CA,1,1,0,1,1,1,0
+65669019,Dog,Dog,German Shepherd Dog,2,Female,2,Medium,0,0,1,0,1,CA,0,1,1,0,1,0,0
+65669020,Dog,Dog,German Shepherd Dog,1,Male,1,Medium,0,0,0,0,0,CA,0,0,0,0,0,0,1
+65669021,Dog,Dog,Belgian Shepherd / Malinois,2,Female,2,Short,0,0,0,1,0,CA,1,1,1,0,0,1,0
+65669022,Dog,Dog,German Shepherd Dog,2,Female,3,Medium,0,0,0,0,0,CA,0,1,0,0,0,0,1
+65669023,Dog,Dog,Pug,2,Male,1,Short,0,0,1,1,1,CA,0,0,0,0,0,0,1
+65669024,Dog,Dog,Belgian Shepherd / Malinois,1,Female,1,Short,0,0,0,1,0,CA,0,1,0,0,0,1,0
+65669025,Dog,Dog,Australian Cattle Dog / Blue Heeler,2,Male,2,Short,0,0,0,0,1,CA,0,0,1,0,0,0,0
+65669026,Dog,Dog,Golden Retriever,3,Male,3,Medium,0,0,0,1,1,CA,0,1,0,1,1,1,0
+65669027,Dog,Dog,Dachshund,2,Female,1,Short,0,0,1,0,1,CA,0,0,0,1,1,1,0
+65669028,Dog,Dog,German Shepherd Dog,1,Male,1,Medium,0,0,0,0,0,CA,0,1,0,0,1,0,1
+65669029,Dog,Dog,Pit Bull Terrier,2,Male,2,Short,0,0,0,1,1,CA,1,1,1,0,1,0,0
+65669030,Dog,Dog,Siberian Husky,1,Female,3,Long,0,0,1,1,0,CA,1,0,0,1,1,1,1
+65669031,Dog,Dog,German Shepherd Dog,1,Male,1,Medium,0,0,0,1,0,CA,0,0,0,1,1,1,0
+65669003,JODI,Dog,Chihuahua,2,Male,2,Short,0,0,0,1,0,FL,0,0,1,0,0,1,0
+65668995,BISHOP,Dog,German Shepherd Dog,2,Male,3,Medium,0,0,1,1,1,IN,0,1,1,0,0,1,0
+65668996,LUNA MIA,Dog,Chihuahua,1,Female,1,Short,0,0,0,1,0,CO,0,0,0,0,0,0,0
+65668997,BARBIE,Dog,Pit Bull Terrier,1,Female,1,Short,0,0,0,1,1,CO,0,0,1,0,0,0,1
+65668999,KEN,Dog,Pit Bull Terrier,1,Male,1,Short,0,0,0,1,1,CO,0,1,1,0,0,1,1
+65668987,Jane,Dog,Pointer,1,Female,1,Short,1,0,1,1,0,TX,1,0,1,1,1,0,0
+65668994,ZEKE,Dog,Labrador Retriever,2,Male,2,Short,0,0,0,1,0,MA,1,0,0,0,0,1,1
+65668993,ELLA,Dog,German Shepherd Dog,3,Female,3,Medium,0,0,0,1,1,TX,1,1,1,0,0,0,1
+65668991,A557735,Dog,Chihuahua,3,Female,1,Short,0,0,0,1,0,CA,1,0,0,0,1,0,1
+65668992,RESCUE PARTNER ONLY: CHIBI,Dog,American Bulldog,2,Female,1,Short,0,0,1,1,1,CA,1,0,1,0,0,0,1
+65668976,BENNY,Dog,Mixed Breed,2,Male,1,Unknown,0,0,1,1,0,FL,1,0,0,1,0,1,0
+65668977,A387670,Dog,German Shepherd Dog,3,Female,2,Medium,0,0,0,1,0,TX,1,0,1,0,0,1,0
+65668978,A387672,Dog,German Shepherd Dog,1,Male,1,Medium,0,0,1,1,0,TX,1,1,1,0,1,1,0
+65668979,A387671,Dog,German Shepherd Dog,1,Female,1,Medium,0,0,1,1,1,TX,0,0,0,1,1,0,0
+65668981,A387674,Dog,German Shepherd Dog,1,Male,1,Medium,0,0,1,0,0,TX,0,1,1,0,0,1,0
+65668983,A387675,Dog,German Shepherd Dog,1,Female,1,Medium,0,0,1,0,0,TX,0,0,0,0,1,0,0
+65668984,A387673,Dog,German Shepherd Dog,1,Male,1,Medium,0,0,1,0,1,TX,0,0,0,0,0,1,0
+65668975,BLINX,Dog,Siberian Husky,3,Female,3,Long,0,0,0,1,0,CA,0,1,1,0,0,0,0
+65668973,ZIGGY,Dog,Mixed Breed,3,Male,2,Unknown,0,0,0,0,0,FL,1,1,0,1,0,0,0
+65668974,BELLA RAE,Dog,Mixed Breed,3,Female,3,Unknown,0,0,0,0,1,FL,0,0,0,0,0,1,0
+65668971,CLEFAIRY,Dog,Chihuahua,3,Female,1,Short,0,0,1,0,0,VA,1,0,0,1,0,0,1
+65668972,PENNY PIE,Dog,Australian Shepherd,2,Female,3,Medium,0,0,0,1,1,VA,0,0,1,0,0,1,0
+65668964,BELLA,Dog,German Shepherd Dog,1,Female,1,Medium,0,0,0,0,0,TX,1,1,1,0,0,1,0
+65668965,BAILEY,Dog,German Shepherd Dog,1,Female,1,Medium,0,0,0,0,1,TX,1,1,0,1,0,0,1
+65668962,TOFU,Dog,Mixed Breed,2,Male,3,Unknown,0,0,1,0,0,TN,0,1,1,0,0,1,0
+65668961,GUMBO,Dog,Mixed Breed,1,Male,1,Unknown,0,0,0,1,1,TN,0,0,0,1,0,0,1
+65668948,BRIANNE,Dog,Australian Cattle Dog / Blue Heeler,2,Female,1,Short,0,0,0,0,0,MO,0,1,1,0,1,0,0
+65668945,A2154080,Dog,Dachshund,2,Male,1,Short,0,0,0,0,0,FL,1,0,0,0,1,0,1
+65668932,Lunette,Dog,Siberian Husky,2,Female,2,Long,1,0,1,1,1,CA,0,0,0,0,0,0,0
+65668939,FREDDY,Dog,Dutch Shepherd,2,Male,3,Short,0,0,0,0,1,UT,0,0,0,0,1,0,1
+65668940,SMOOCH,Dog,Siberian Husky,2,Male,3,Long,0,0,0,0,0,UT,0,1,0,0,0,0,0
+65668942,TOAST,Dog,Doberman Pinscher,2,Female,2,Short,0,0,1,1,0,UT,0,1,1,0,0,0,1
+65668930,A1155505,Dog,Labrador Retriever,2,Female,2,Short,0,0,0,1,1,FL,1,1,1,0,0,1,0
+65668929,ROMEO,Dog,Maltese,2,Male,1,Long,0,0,0,1,0,NE,1,1,0,1,0,1,1
+65668922,JERRY JIM,Dog,Pit Bull Terrier,2,Male,3,Short,0,0,0,1,0,AZ,0,0,1,0,0,0,0
+65668923,TUGBOAT,Dog,Pit Bull Terrier,3,Male,3,Short,0,0,1,0,1,AZ,0,0,0,0,0,1,1
+65668924,MOISES,Dog,German Shepherd Dog,3,Male,3,Medium,0,0,0,0,1,AZ,0,0,0,0,1,0,0
+65668925,DIVA,Dog,Pit Bull Terrier,3,Female,3,Short,0,0,0,0,1,AZ,0,0,0,1,1,0,0
+65668926,BENNY,Dog,Pit Bull Terrier,2,Male,3,Short,0,0,0,0,0,AZ,1,1,0,1,1,0,0
+65668927,ATHENA,Dog,Pit Bull Terrier,3,Female,3,Short,0,0,1,1,0,AZ,1,0,1,1,1,0,1
+65668928,HURON,Dog,Husky,3,Male,3,Long,0,0,0,1,0,AZ,0,1,1,1,1,0,0
+65668916,TOM,Dog,Pit Bull Terrier,2,Male,2,Short,0,0,0,1,1,FL,0,0,0,0,1,0,0
+65668917,OAK,Dog,Pit Bull Terrier,3,Male,1,Short,0,0,0,1,1,AZ,0,0,1,0,0,0,0
+65668918,ASLAN,Dog,German Shepherd Dog,2,Male,3,Medium,0,0,1,1,0,AZ,0,1,0,1,0,1,0
+65668920,JESSIE,Dog,Australian Cattle Dog / Blue Heeler,3,Female,3,Short,0,0,0,0,1,AZ,1,0,0,1,1,1,1
+65668916,TOM,Dog,Pit Bull Terrier,2,Male,2,Short,0,0,0,0,0,FL,1,1,0,0,1,0,0
+65668911,LOUIS,Dog,German Shepherd Dog,3,Female,3,Medium,0,0,1,0,0,CA,0,0,1,0,1,0,1
+65668912,TATER TOT,Dog,Chihuahua,1,Male,1,Short,0,0,0,11,1,CA,1,1,0,0,1,0,1
+65668913,ONION,Dog,German Shepherd Dog,2,Male,3,Medium,0,0,0,1,0,CA,0,0,1,0,0,0,0
+65668909,ZULO,Dog,Labrador Retriever,2,Male,3,Short,0,0,1,1,0,CA,1,0,0,1,0,1,1
+65668910,FRENCH FRY,Dog,Chihuahua,1,Male,1,Short,0,0,0,1,0,CA,0,1,0,1,0,0,1
+65668915,PEARL,Dog,German Shepherd Dog,1,Female,1,Medium,0,0,0,0,0,CA,0,0,0,1,1,0,1
+65668899,MADRID,Dog,Mixed Breed,3,Male,3,Unknown,0,0,1,1,1,GA,0,0,0,0,0,0,1
+65668901,CLOVER,Dog,Mixed Breed,2,Female,2,Unknown,0,0,0,1,0,GA,1,0,1,1,1,0,0
+65668894,LAVENDER,Dog,Mixed Breed,2,Female,2,Unknown,0,0,0,1,0,GA,1,1,0,1,1,0,0
+65668897,CHUNK,Dog,Pit Bull Terrier,2,Male,2,Short,0,0,0,0,1,GA,0,0,1,0,0,0,0
+65668900,DIAMOND,Dog,Pit Bull Terrier,3,Female,3,Short,0,0,1,0,0,GA,1,0,0,1,0,1,1
+65668893,SPAGHETTI,Dog,Pit Bull Terrier,2,Female,1,Short,0,0,0,1,0,OH,0,0,0,1,0,1,1
+65668882,DESMOND,Dog,Siberian Husky,2,Male,2,Long,0,0,0,1,0,CO,0,0,1,0,0,0,0
+65668883,DEWEY,Dog,Labrador Retriever,3,Male,3,Short,0,0,1,0,1,CO,0,1,0,0,1,0,1
+65668888,DARCIE,Dog,Curly-Coated Retriever,2,Female,3,Curly,0,0,1,0,0,CA,0,0,0,0,0,1,1
+65668863,Lunette,Dog,Siberian Husky,2,Female,2,Long,1,0,1,1,1,CA,0,0,0,0,0,0,0
+65668865,Arthur,Dog,Belgian Shepherd / Malinois,3,Male,3,Short,0,0,1,0,1,IA,0,0,0,0,0,1,1
+65668866,Tomato,Dog,Basset Hound,4,Female,2,Short,0,0,0,0,0,IA,1,0,0,1,1,1,1
+65668867,Olivia,Dog,Hound,2,Female,2,Short,0,0,1,0,0,IA,0,0,1,0,0,1,0
+65669066,Dragonfly,Cat,Domestic Short Hair,1,Male,1,Short,0,0,1,1,1,TX,0,0,0,0,1,0,0
+65669063,Lucky and Olive (bonded besties),Cat,Russian Blue,1,Female,2,Short,1,0,1,0,1,SC,1,1,1,0,0,1,1
+65669062,Lucky and Olive (bonded besties),Cat,Russian Blue,1,Female,2,Short,1,0,1,0,1,SC,0,1,1,1,0,0,0
+65669061,Spidey,Cat,Domestic Short Hair,3,Male,2,Short,0,0,1,1,0,OH,0,0,0,1,0,1,0
+65669060,Jenga,Cat,Domestic Short Hair,1,Male,2,Short,1,0,1,0,1,MN,0,0,0,0,0,0,1
+65669057,SISSY,Cat,Domestic Short Hair,1,Female,2,Short,1,0,1,1,1,PA,1,1,1,0,1,0,1
+65669055,Chelsea,Cat,Domestic Short Hair,3,Female,2,Short,0,0,1,0,0,IA,1,1,1,0,0,1,0
+65669052,Salisbury,Cat,Domestic Short Hair,3,Female,2,Short,1,0,1,0,1,MD,1,0,1,0,0,0,0
+65669046,Lavender,Cat,Siamese,1,Female,1,Short,0,0,1,0,0,TX,1,0,0,0,0,0,0
+65669042,Shaquille,Cat,Domestic Medium Hair,1,Male,1,Medium,0,0,1,0,0,CO,0,1,0,0,0,0,0
+65669043,Soli,Cat,Domestic Short Hair,1,Male,1,Short,0,0,1,1,0,CO,1,0,0,1,0,1,0
+65669044,Magic (Mia),Cat,Domestic Short Hair,1,Male,1,Short,0,0,0,0,1,CO,1,0,0,0,0,1,0
+65669045,Cher,Cat,Domestic Short Hair,3,Female,3,Short,0,0,1,0,0,CO,1,1,0,1,1,1,0
+65669041,Bo Katan (Grogu 3),Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,0,0,CO,1,1,1,1,1,1,0
+65669039,Pisa,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,1,1,WI,0,0,0,1,1,0,0
+65669040,Homer,Cat,Domestic Short Hair,1,Male,1,Short,0,0,0,0,0,WI,1,0,0,0,0,1,1
+65669005,A681924,Cat,Domestic Short Hair,2,Male,3,Short,0,0,1,0,0,TX,1,0,0,0,0,1,1
+65669001,JUICE,Cat,Domestic Short Hair,1,Male,1,Short,0,0,0,0,1,CA,0,1,0,0,0,1,0
+65669002,GIN,Cat,Domestic Short Hair,1,Male,1,Short,0,0,0,1,0,CA,0,0,1,1,0,1,1
+65668998,BROOKLYN,Cat,Domestic Short Hair,3,Female,2,Short,0,0,1,0,0,CO,0,0,0,0,1,0,0
+65669000,BRUTUS,Cat,Domestic Short Hair,3,Male,2,Short,0,0,0,0,1,CO,0,0,0,1,0,0,0
+65668989,SQUASH,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,0,0,OK,1,0,1,0,0,1,1
+65668990,SQUEAK,Cat,Domestic Short Hair,1,Male,1,Short,0,0,0,1,0,OK,0,0,1,0,0,0,0
+65668988,ABALONE,Cat,Domestic Short Hair,1,Male,1,Short,0,0,1,0,1,OK,0,0,0,0,0,0,1
+65668985,WHITECLAW,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,0,0,CA,0,0,0,1,0,1,0
+65668980,PETAL,Cat,Domestic Short Hair,3,Female,1,Short,0,0,0,0,1,CA,0,0,1,0,0,0,0
+65668982,BLOOM,Cat,Domestic Short Hair,3,Female,1,Short,0,0,1,1,0,CA,0,0,1,0,1,0,0
+65668970,CORRIANDER,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,0,0,CA,1,1,1,1,1,0,0
+65668966,CREM BRULEE,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,0,0,CA,0,1,0,0,0,1,0
+65668967,CLOVE,Cat,Domestic Short Hair,1,Male,1,Short,0,0,0,1,1,CA,0,0,1,0,1,1,0
+65668968,NUTMEG,Cat,Domestic Short Hair,1,Female,1,Short,0,0,1,0,0,CA,0,1,0,1,0,0,0
+65668969,CARDAMOM,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,0,0,CA,0,0,1,1,1,0,0
+65668963,A1828225,Cat,Domestic Short Hair,1,Male,1,Short,0,0,1,1,1,CA,0,0,1,0,1,0,1
+65668958,BOB,Cat,Domestic Short Hair,1,Male,1,Short,0,0,0,0,0,CA,0,1,0,0,1,0,0
+65668951,THE BABY,Cat,Domestic Short Hair,1,Male,1,Short,0,0,0,0,0,CA,0,1,1,0,0,1,1
+65668950,MAKIYO,Cat,Domestic Short Hair,3,Male,3,Short,0,0,1,0,0,NM,0,0,0,0,0,0,0
+65668949,ASHER,Cat,Domestic Short Hair,2,Male,1,Short,0,0,0,0,1,MO,0,1,0,0,1,0,1
+65668946,FLORA LEA,Cat,Domestic Short Hair,2,Female,1,Short,0,0,0,1,0,CO,1,0,0,1,0,0,0
+65668947,THYME,Cat,Domestic Short Hair,3,Female,1,Short,0,0,0,0,0,CO,1,1,1,1,0,0,1
+65668944,FRANKIE,Cat,Domestic Short Hair,2,Male,2,Short,0,0,1,0,1,CA,0,0,0,1,1,0,0
+65668937,HOWELL,Cat,Domestic Short Hair,2,Male,1,Short,0,0,0,0,0,UT,1,0,1,1,0,0,1
+65668938,ALEXANDRA,Cat,Domestic Short Hair,2,Female,1,Short,0,0,0,1,0,UT,0,0,0,0,1,1,0
+65668941,ZUZU,Cat,Domestic Short Hair,1,Male,1,Short,0,0,0,0,0,UT,0,1,0,0,1,1,0
+65668943,KOL,Cat,Domestic Short Hair,2,Male,1,Short,0,0,0,0,1,UT,1,1,1,0,1,1,0
+65668934,BUTTERCUP,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,1,0,TX,1,1,0,0,1,0,1
+65668935,BLOSSOM,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,0,0,TX,1,1,0,0,1,0,1
+65668936,BUBBLES,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,0,0,TX,1,0,1,1,0,0,0
+65668933,BAXTER,Cat,Domestic Short Hair,3,Male,2,Short,0,0,0,0,1,FL,1,0,0,0,0,0,0
+65668931,SWEETY,Cat,Domestic Short Hair,3,Female,2,Short,0,0,1,0,0,CA,0,1,1,0,0,0,0
+65668914,A509981,Cat,Domestic Short Hair,3,Female,3,Short,0,0,0,1,0,CA,0,1,1,0,0,0,0
+65668904,CHARLIE,Cat,Domestic Short Hair,1,Male,1,Short,0,0,1,0,1,OH,0,0,0,1,0,1,1
+65668905,NACHO,Cat,Domestic Short Hair,1,Male,2,Short,0,0,0,0,0,OH,0,0,0,1,0,0,1
+65668906,KATIE,Cat,Domestic Medium Hair,2,Female,2,Medium,0,0,0,0,0,OH,0,0,0,0,0,1,0
+65668907,DIANE,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,1,0,OH,0,1,0,1,0,0,0
+65668908,AIDEN,Cat,Domestic Short Hair,1,Male,2,Short,0,0,1,0,1,OH,0,0,0,1,1,1,1
+65668903,A1307451,Cat,Domestic Short Hair,2,Male,1,Short,0,0,0,0,0,CA,0,1,1,0,0,1,0
+65668889,SASSY,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,0,0,CA,1,1,0,0,0,1,1
+65668875,RASPBERRY,Cat,Domestic Short Hair,1,Female,1,Short,0,0,1,0,1,NV,1,1,1,0,0,1,1
+65668876,CHASE,Cat,Domestic Long Hair,3,Male,4,Long,0,0,0,1,0,NV,0,0,1,1,0,0,1
+65668877,STRAWBERRY,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,0,0,NV,1,1,0,0,0,1,0
+65668878,PICASSO,Cat,Domestic Medium Hair,1,Male,1,Medium,0,0,1,0,0,NV,1,0,0,1,0,1,0
+65668879,DRAGON FTA,Cat,Domestic Medium Hair,1,Male,1,Medium,0,0,0,0,1,NV,0,1,0,1,0,0,0
+65668880,PHOENIX FTA,Cat,Domestic Long Hair,1,Female,1,Long,0,0,0,1,0,NV,0,0,0,0,0,0,0
+65668874,Zelda,Cat,Ragdoll,3,Female,1,Long,0,0,0,0,1,ME,1,0,1,1,0,0,1
+65668871,Aries,Cat,Domestic Short Hair,1,Male,1,Short,0,0,1,0,0,NV,0,1,0,0,1,1,0
+65668872,Nala,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,1,0,NV,0,1,0,0,0,0,1
+65668873,Nemo,Cat,Domestic Short Hair,1,Male,1,Short,0,0,0,0,0,NV,1,0,1,1,0,1,0
+65668859,Maggie,Cat,Domestic Short Hair,1,Female,1,Short,0,0,1,0,0,PA,0,0,1,1,0,0,1
+65668855,Maple - Adoption Pending!,Cat,Domestic Short Hair,1,Male,1,Short,1,0,1,1,1,NJ,0,1,0,1,0,0,0
+65668856,Cedar - Cute boy!!,Cat,Domestic Short Hair,1,Male,1,Short,1,0,1,1,1,NJ,1,1,0,0,1,1,0
+65668842,Honey,Cat,Tabby,1,Female,2,Short,1,0,1,1,1,CA,0,0,1,1,0,0,0
+65668840,Hopper,Cat,Domestic Short Hair,1,Female,2,Short,0,0,1,1,1,AZ,0,0,1,0,0,1,0
+65668841,Cricket,Cat,Domestic Short Hair,1,Female,2,Short,0,0,1,1,1,AZ,0,0,1,1,1,0,0
+65668839,Ladybug,Cat,Domestic Short Hair,1,Female,2,Short,0,0,1,1,1,AZ,1,0,0,0,1,0,0
+65668833,Jedi,Cat,Domestic Short Hair,1,Male,2,Short,0,0,0,0,0,KY,1,0,1,0,1,1,0
+65668832,Dasher,Cat,Domestic Short Hair,1,Male,1,Short,1,0,1,1,1,FL,1,1,0,1,0,0,0
+65668831,Tom & Jerry,Cat,Domestic Short Hair,1,Male,2,Short,1,0,0,1,0,IL,0,1,0,1,0,0,1
+65668828,Pepe,Cat,Domestic Short Hair,1,Male,2,Short,0,0,1,1,0,WA,1,1,1,1,0,1,0
+65668827,Taz,Cat,Domestic Short Hair,1,Male,2,Short,0,0,0,1,0,WA,1,0,0,1,0,1,0
+65668829,Daffy,Cat,Domestic Short Hair,1,Female,2,Short,0,0,0,1,1,WA,0,0,0,0,0,0,0
+65668873,Nemo,Cat,Domestic Short Hair,1,Male,1,Short,0,0,1,1,0,NV,0,1,1,1,0,0,0
+65668859,Maggie,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,1,0,PA,0,1,0,1,1,1,0
+65668855,Maple - Adoption Pending!,Cat,Domestic Short Hair,1,Male,1,Short,1,0,1,1,1,NJ,1,0,1,0,0,1,0
+65668856,Cedar - Cute boy!!,Cat,Domestic Short Hair,1,Male,1,Short,1,0,1,1,1,NJ,1,0,0,0,0,0,1
+65668842,Honey,Cat,Tabby,1,Female,2,Short,1,0,1,1,1,CA,0,1,0,0,1,1,0
+65668840,Hopper,Cat,Domestic Short Hair,1,Female,2,Short,0,0,1,1,1,AZ,0,1,1,1,1,0,0
+65668841,Cricket,Cat,Domestic Short Hair,1,Female,2,Short,0,0,1,1,1,AZ,0,0,1,0,0,0,1
+65668839,Ladybug,Cat,Domestic Short Hair,1,Female,2,Short,0,0,1,1,1,AZ,0,0,1,1,0,1,0
+65668833,Jedi,Cat,Domestic Short Hair,1,Male,2,Short,0,0,0,0,0,KY,1,0,0,1,0,1,0
+65668832,Dasher,Cat,Domestic Short Hair,1,Male,1,Short,1,0,1,0,1,FL,0,0,1,0,0,1,1
+65668831,Tom & Jerry,Cat,Domestic Short Hair,1,Male,2,Short,1,0,1,1,0,IL,0,1,1,0,0,0,0
+65668828,Pepe,Cat,Domestic Short Hair,1,Male,2,Short,0,0,0,1,0,WA,0,0,1,0,1,0,0
+65668827,Taz,Cat,Domestic Short Hair,1,Male,2,Short,0,0,0,0,1,WA,0,1,1,0,1,1,0
+65668829,Daffy,Cat,Domestic Short Hair,1,Female,2,Short,0,0,1,0,0,WA,0,1,0,0,0,1,1
+65668826,Whiskey,Cat,Domestic Short Hair,2,Male,1,Short,1,1,0,1,0,CA,1,0,0,0,0,0,0
+65668823,Rollo,Cat,Domestic Short Hair,2,Male,2,Short,1,0,0,1,0,ND,0,1,0,0,0,1,0
+65668825,Decker,Cat,Domestic Short Hair,3,Male,2,Short,1,0,0,0,0,ND,1,0,1,0,1,0,0
+65668824,Pooh,Cat,Domestic Short Hair,3,Male,2,Short,1,0,1,1,1,ND,0,0,0,1,0,0,1
+65668819,Mackaye,Cat,Domestic Short Hair,1,Male,2,Short,1,0,1,0,1,OR,0,1,0,0,0,1,0
+65668818,Butter Cookie,Cat,Domestic Short Hair,1,Female,1,Short,0,0,0,0,0,TX,1,1,1,1,1,0,1
+65669004,WILDER,Rabbit,Netherland Dwarf,2,Male,1,Unknown,0,0,0,1,0,CA,0,0,1,0,1,1,1
+65668440,Mist,Rabbit,Lionhead,3,Male,2,Medium,0,0,1,0,1,UT,0,0,1,0,0,0,0
+65668448,Thor,Rabbit,Lionhead,3,Male,2,Medium,0,0,0,0,0,UT,1,0,1,1,1,1,0
+65668425,Gigi and Babette,Rabbit,Holland Lop,2,Female,1,Short,1,0,1,1,0,IL,1,1,0,1,0,1,1
+65668262,Orla,Rabbit,New Zealand,3,Female,2,Short,0,0,0,0,0,CA,1,0,0,0,0,0,1
+65668073,PANCAKE,Rabbit,American,2,Male,2,Unknown,0,0,0,1,1,MA,1,0,0,1,0,0,0
+65667920,Paulie,Rabbit,American,2,Male,2,Unknown,0,0,0,1,0,NV,1,1,1,0,1,1,1
+65667921,Dottie,Rabbit,Dutch,1,Female,2,Short,0,0,0,1,0,NV,0,1,0,0,1,0,1
+65667356,PETER PAN,Rabbit,Bunny Rabbit,2,Male,2,Short,0,0,0,1,1,CA,0,0,0,0,0,0,1
+65666753,Mia,Rabbit,Bunny Rabbit,3,Female,2,Short,0,0,0,1,0,UT,0,0,1,0,0,1,0
+65666754,Miel,Rabbit,Bunny Rabbit,3,Male,2,Short,0,0,1,1,0,UT,0,0,0,0,0,1,0
+65666551,Lenny,Rabbit,Lop Eared,3,Male,2,Short,0,0,1,1,1,WI,1,0,0,1,1,0,1
+65666148,Bruno,Rabbit,Bunny Rabbit,2,Male,2,Short,0,0,0,1,1,OR,0,0,1,0,0,1,1
+65666048,Maple,Rabbit,Holland Lop,3,Male,1,Short,0,0,1,1,0,IL,0,1,1,0,1,0,0
+65665894,Chance and Sassy,Rabbit,Rex,3,Male,2,Short,1,0,1,1,0,FL,1,0,0,1,0,1,0
+65665189,Ivy,Rabbit,Lionhead,2,Male,2,Medium,0,0,1,1,1,NY,1,0,1,1,1,0,1
+65665163,Callie,Rabbit,Bunny Rabbit,3,Female,2,Short,0,0,1,1,0,NY,0,0,1,1,1,0,1
+65664868,Snowball,Rabbit,Mini Lop,3,Male,1,Short,0,0,1,0,0,CA,0,1,1,1,0,0,0
+65664867,Cinnabun,Rabbit,English Lop,3,Female,2,Long,0,0,1,0,0,CA,1,1,0,0,0,1,1
+65664563,Creme Brulee,Rabbit,Flemish Giant,2,Female,2,Short,0,0,1,1,1,MA,1,1,0,1,0,1,0
+65663925,Bowie & Star,Rabbit,Lionhead,3,Male,2,Medium,1,0,1,0,0,CA,0,1,0,0,0,1,1
+65663923,Cassie,Rabbit,Bunny Rabbit,3,Female,2,Short,1,0,1,0,0,CA,1,0,0,0,1,0,1
+65663921,Sunny,Rabbit,Bunny Rabbit,3,Male,2,Short,1,0,1,0,0,CA,0,1,0,0,0,1,0
+65663918,Penguin & Fluffy Puffy & Sunkiss,Rabbit,Lionhead,3,Male,2,Medium,1,0,1,1,1,CA,0,0,0,1,0,0,1
+65663908,Bugs,Rabbit,Lop Eared,3,Male,2,Short,1,0,1,0,0,CA,0,0,0,0,0,0,1
+65662725,Jenkins,Rabbit,Harlequin,3,Male,1,Short,0,0,1,0,0,CA,0,1,1,1,1,0,0
+65662715,ONYX,Rabbit,American,1,Male,2,Unknown,0,0,1,0,1,NV,0,1,0,1,1,1,0
+65662583,Elena & Rosco (Waffles),Rabbit,Lionhead,2,Female,2,Medium,1,0,1,1,0,CA,1,0,0,1,0,0,0
+65662577,Bailey,Rabbit,Rex,2,Female,2,Short,1,0,1,0,0,CA,1,1,1,1,0,0,1
+65662525,Oreo,Rabbit,Havana,2,Male,2,Short,1,0,0,0,1,CA,0,0,0,1,1,1,1
+65662521,Coco,Rabbit,Angora Rabbit,2,Female,2,Long,1,0,0,0,0,CA,1,0,0,1,1,0,0
+65662499,Coco & Oreo,Rabbit,Angora Rabbit,2,Female,2,Long,1,0,1,1,0,CA,0,1,0,1,0,0,0
+65662477,Celio & Little Moon,Rabbit,Lionhead,2,Male,2,Medium,1,0,0,0,1,CA,0,1,0,0,1,0,1
+65662470,Celio,Rabbit,Lionhead,2,Male,2,Medium,1,1,0,1,0,CA,0,0,1,0,0,0,0
+65662459,Little Moon,Rabbit,Dutch,2,Female,2,Short,1,0,0,1,1,CA,1,0,1,0,0,1,0
+65661803,Keebler,Rabbit,Mini Rex,3,Male,1,Short,1,0,1,1,0,NJ,1,0,0,1,0,0,0
+65661754,London,Rabbit,Mini Rex,3,Male,1,Short,1,0,0,1,0,NJ,1,1,1,1,0,0,0
+65661494,2307-1616 Coco,Rabbit,Bunny Rabbit,2,Female,2,Short,0,0,0,1,0,VA,0,0,1,0,1,1,1
+65661390,2307-1601 Parsley,Rabbit,Bunny Rabbit,3,Female,1,Short,0,0,0,1,0,VA,1,1,0,1,1,1,1
+65661389,2307-1581 Leo,Rabbit,Bunny Rabbit,3,Male,1,Short,0,0,1,1,1,VA,0,0,1,1,0,0,1
+65661322,Oscar (the Grouch),Rabbit,Rex,3,Male,2,Short,0,0,0,0,1,CA,0,0,1,1,0,0,1
+65661054,Lilac,Rabbit,American,3,Female,2,Unknown,0,0,0,1,1,FL,0,1,0,0,0,1,0
+65659805,Butterbuns,Rabbit,Dwarf,3,Male,2,Unknown,0,0,0,0,1,CA,0,1,0,0,1,0,0
+65659739,MOLLY,Rabbit,Bunny Rabbit,2,Female,1,Short,0,0,1,0,1,NM,0,0,0,0,1,1,0
+65658966,CANTALOUPE,Rabbit,Bunny Rabbit,1,Female,1,Short,0,0,0,0,0,NV,0,0,1,1,0,0,0
+65658967,LEMON,Rabbit,Bunny Rabbit,1,Male,1,Short,0,0,0,1,1,NV,1,1,1,0,0,1,0
+65658965,BLISS,Rabbit,Bunny Rabbit,3,Female,1,Short,0,0,1,0,0,NV,1,1,1,0,0,1,1
+65658951,BILLY,Rabbit,French Lop,2,Male,1,Short,0,0,0,0,0,CO,0,1,1,1,1,1,0
+65658946,A413159,Rabbit,English Lop,2,Male,1,Long,0,0,0,0,0,OK,1,1,1,1,0,0,1
+65658654,Leonard,Rabbit,American,3,Male,2,Unknown,0,0,1,1,0,FL,1,0,0,0,0,1,1
+65658642,Hershel,Rabbit,American,3,Male,2,Unknown,0,0,0,0,0,FL,0,1,0,1,0,0,0
+65658479,Fuzz,Rabbit,Lionhead,3,Female,1,Medium,0,0,0,0,0,OH,0,0,0,0,1,0,0
+65657567,Buttercup,Rabbit,American,2,Male,2,Unknown,0,0,0,0,0,NY,1,0,0,0,1,0,1
+65657568,Fudge,Rabbit,American,2,Male,2,Unknown,0,0,1,1,0,NY,1,1,1,1,0,1,1
+65657272,Khloe,Rabbit,Rex,2,Female,2,Short,0,0,0,0,0,IA,1,0,0,0,1,1,0
+65657173,DUMPLING,Rabbit,Bunny Rabbit,2,Female,2,Short,0,0,0,0,0,VA,0,1,0,1,0,1,1
+65657172,HOPPER,Rabbit,Bunny Rabbit,1,Male,1,Short,0,0,1,0,0,VA,0,0,0,0,0,0,1
+65657174,MCHOPPERTON,Rabbit,Bunny Rabbit,1,Male,1,Short,0,0,0,1,0,VA,0,0,0,1,1,0,0
+65657084,Twinkie - Claremont Location,Rabbit,Lionhead,1,Female,2,Medium,1,0,0,0,0,CA,1,0,1,1,0,0,0
+65656845,Rafael,Rabbit,Rex,2,Male,1,Short,0,0,1,0,0,PA,0,0,1,0,1,0,0
+65656031,Louise,Rabbit,Bunny Rabbit,2,Female,2,Short,0,0,0,0,0,QC,1,1,1,0,0,0,0
+65656030,Phantom,Rabbit,Bunny Rabbit,1,Male,2,Short,0,0,0,0,0,QC,0,0,0,0,1,1,0
+65655924,Yoko,Rabbit,Mini Rex,3,Male,1,Short,0,0,1,1,0,FL,0,0,1,1,0,0,1
+65655613,Emerson,Rabbit,American,1,Male,2,Unknown,0,0,0,0,0,RI,0,1,1,0,1,0,0
+65654640,BUN BUN,Rabbit,Bunny Rabbit,3,Female,2,Short,0,0,0,0,0,CA,0,1,1,1,1,1,1
+65654626,MAGGIE,Rabbit,Bunny Rabbit,3,Female,2,Short,0,0,0,1,1,VA,0,0,0,0,1,0,0
+65654490,A763822,Rabbit,Bunny Rabbit,3,Male,2,Short,0,0,1,1,0,CA,1,0,0,1,1,1,0
+65654268,Thumper,Rabbit,Dutch,3,Male,1,Short,0,0,0,1,0,MN,1,0,0,0,0,0,0
+65654220,Harlo,Rabbit,American,2,Male,2,Unknown,0,0,0,1,0,CA,0,0,0,1,0,1,1
+65654087,Rhonda,Rabbit,New Zealand,2,Female,3,Short,1,0,1,1,0,MO,0,1,0,0,0,0,1
+65654046,Gayle,Rabbit,New Zealand,2,Female,3,Short,1,0,1,1,1,MO,0,0,0,1,0,0,1
+65653288,CLOVER,Rabbit,Bunny Rabbit,2,Female,1,Short,0,0,0,1,0,VA,0,1,0,0,0,1,0
+65653286,TANDI,Rabbit,Bunny Rabbit,2,Male,2,Short,0,0,0,0,0,VA,0,0,1,0,1,0,1
+65653044,A509659,Rabbit,Bunny Rabbit,3,Male,1,Short,0,0,0,0,1,CA,0,0,0,0,1,1,1
+65653043,A509662,Rabbit,Bunny Rabbit,3,Female,1,Short,0,0,1,1,0,CA,0,1,0,0,0,1,0
+65653012,Maggie and Bentley,Rabbit,Dutch,3,Male,2,Short,1,0,1,0,1,MO,1,1,1,0,0,0,0
+65652857,Charlie,Rabbit,Jersey Wooly,3,Male,1,Medium,1,0,0,0,1,NJ,0,0,1,0,1,0,0
+65652633,Valentino,Rabbit,American,2,Male,2,Unknown,1,0,1,0,0,NJ,0,0,0,1,1,1,0
+65652137,Grungetta,Rabbit,Lionhead,3,Female,2,Medium,0,0,0,0,0,NH,0,0,1,1,0,0,1
+65651260,HINGLE MCCRINGLEBERRY,Rabbit,Bunny Rabbit,3,Male,1,Short,0,0,1,0,0,NE,1,0,0,0,0,0,0
+65650814,Patches,Rabbit,American Fuzzy Lop,2,Female,1,Medium,1,0,0,0,1,NJ,0,0,0,0,0,1,0
+65650658,Candy,Rabbit,Bunny Rabbit,2,Male,2,Short,0,0,0,0,0,TX,1,1,0,1,1,0,1
+65650659,Cotton,Rabbit,Bunny Rabbit,2,Male,2,Short,0,0,0,1,0,TX,0,0,0,1,1,1,0
+65650574,Cream,Rabbit,American Fuzzy Lop,2,Female,1,Medium,1,0,1,0,0,NJ,1,0,0,0,1,1,0
+65650468,Cookie,Rabbit,American Fuzzy Lop,2,Female,1,Medium,1,0,1,0,0,NJ,1,1,0,0,1,0,0
+65649404,Cheerio,Rabbit,American,2,Male,2,Unknown,0,0,1,1,0,PA,1,0,1,0,1,0,0
+65648232,Cami,Rabbit,Dutch,1,Female,2,Short,0,0,1,0,0,VT,0,0,1,0,0,1,0
+65648228,Viktor,Rabbit,Dutch,2,Male,2,Short,0,0,1,1,1,VT,1,1,0,1,1,0,0
+65648229,Marshmellow,Rabbit,Dutch,2,Female,2,Short,0,0,1,1,1,VT,1,0,0,0,1,0,1
+65648231,Mamma,Rabbit,Dutch,2,Female,2,Short,0,0,1,0,0,VT,1,0,1,1,0,1,0
+65648227,Bruno,Rabbit,Dutch,1,Male,2,Short,0,0,1,1,0,VT,0,0,1,0,1,1,0
+65648140,Fantme,Rabbit,Bunny Rabbit,4,Male,1,Short,0,0,1,1,0,QC,1,1,0,0,0,1,0
+65647895,Wabby Wabbit,Rabbit,Bunny Rabbit,2,Male,2,Short,0,0,1,0,0,NY,0,1,1,0,1,0,0
+65647627,Stormy,Rabbit,Lionhead,1,Female,2,Medium,0,0,1,0,1,NC,1,0,0,0,1,0,0
+65647442,Nellie,Rabbit,American,2,Female,2,Unknown,0,0,0,0,0,OH,0,1,0,1,0,1,0
+65646795,Cheesecake,Rabbit,English Spot,2,Female,1,Short,0,0,0,0,0,MA,0,1,1,0,1,0,0
+65646604,Butters,Rabbit,Lop Eared,3,Male,2,Short,0,1,1,1,0,TX,0,1,0,0,0,0,0
+65645073,Uncle Fester,Rabbit,Californian,3,Male,2,Short,0,0,0,1,0,TX,0,1,0,0,0,0,0
+65643196,Bonnie & Clyde,Rabbit,Jersey Wooly,3,Male,2,Medium,1,0,1,1,0,NY,1,0,1,0,0,0,1
+65643105,Shalamar,Rabbit,English Spot,2,Female,2,Short,1,0,1,1,0,MO,0,0,1,0,0,0,0
+65669068,Cafe Creme,Guinea Pig,Guinea Pig,1,Female,2,Short,0,0,1,1,0,CA,0,1,0,1,0,1,1
+65669069,Doppio,Guinea Pig,Guinea Pig,1,Male,2,Short,0,0,1,1,1,CA,1,0,0,1,0,0,0
+65669070,Americano,Guinea Pig,Guinea Pig,1,Female,2,Short,0,0,1,1,0,CA,1,0,0,0,0,1,0
+65669071,Cortado,Guinea Pig,Guinea Pig,1,Male,2,Short,0,0,1,1,0,CA,1,0,0,1,0,0,1
+65669072,Macchiato,Guinea Pig,Guinea Pig,3,Female,2,Short,0,0,1,1,0,CA,0,1,0,0,0,1,1
+65669073,Affogato,Guinea Pig,Guinea Pig,1,Male,2,Short,0,0,1,0,1,CA,0,1,1,0,0,0,0
+65668590,Kiko,Gerbil,Gerbil,3,Female,1,Short,0,0,1,0,0,QC,1,0,1,0,0,0,0
+65667962,Zeke,Ferret,Ferret,2,Male,2,Short,0,0,1,1,0,RI,1,1,0,1,1,0,1
+65667961,Fran,Ferret,Ferret,2,Female,2,Short,0,0,1,1,0,RI,0,1,0,0,0,0,0
+65667946,Baby rats ,Rat,Rat,1,Male,1,Short,0,0,1,1,1,MI,0,0,1,1,1,0,0
+65667675,Biggins,Guinea Pig,Guinea Pig,3,Female,1,Short,0,0,1,0,1,MN,1,0,0,1,0,0,0
+65667677,Foxy,Guinea Pig,Guinea Pig,3,Female,1,Short,0,0,1,0,0,MN,1,1,0,1,1,0,1
+65667561,Penny,Guinea Pig,Guinea Pig,2,Female,2,Short,0,0,1,0,1,WV,0,1,0,0,1,0,1
+65667560,Bunny,Guinea Pig,Guinea Pig,2,Female,2,Short,0,0,1,0,0,WV,0,0,1,0,0,1,0
+65667454,Salacia,Guinea Pig,Guinea Pig,1,Female,1,Short,0,0,0,0,0,IA,0,0,0,0,1,0,0
+65667455,Juturna,Guinea Pig,Guinea Pig,1,Female,1,Short,0,0,0,0,1,IA,1,0,0,0,1,1,0
+65667265,GLEE CLUB,Guinea Pig,Guinea Pig,3,Female,2,Short,0,0,0,0,0,MA,0,0,0,0,0,1,0
+65666963,Tyrone,Gerbil,Gerbil,3,Male,1,Short,0,0,0,0,0,VA,0,1,0,1,0,1,1
+65666737,Winnie,Guinea Pig,Guinea Pig,3,Female,1,Short,0,0,1,0,0,MD,0,1,1,1,0,0,0
+65666738,Bean,Guinea Pig,Guinea Pig,3,Female,1,Short,0,0,0,0,1,MD,1,0,1,0,1,0,0
+65666548,"Malibu, Waffles, Maple",Ferret,Ferret,3,Female,1,Short,0,0,0,0,0,OH,0,1,0,0,0,0,1
+65665395,Lilly,Rat,Rat,2,Female,2,Short,0,0,0,0,0,IN,1,0,1,0,0,0,1
+65665394,Cedar,Rat,Rat,2,Male,2,Short,0,0,0,0,0,IN,0,0,0,0,1,0,1
+65665391,Iris,Rat,Rat,2,Female,2,Short,0,0,1,0,1,IN,0,1,1,1,0,0,0
+65665393,Hickory,Rat,Rat,2,Male,2,Short,0,0,0,0,0,IN,0,1,1,0,0,0,0
+65665392,Poppy,Rat,Rat,2,Female,2,Short,0,0,0,0,0,IN,0,0,1,1,0,0,0
+65665192,Peanut Fort,Guinea Pig,Guinea Pig,3,Female,1,Short,0,0,0,0,1,NY,1,1,0,0,1,0,1
+65665191,Waffle,Guinea Pig,Guinea Pig,2,Female,1,Short,0,0,1,0,0,NY,1,1,1,0,1,0,0
+65664775,Bean,Rat,Rat,2,Male,3,Short,0,0,0,0,0,WA,1,0,1,1,0,0,1
+65664776,Jess,Gerbil,Gerbil,3,Female,3,Short,0,0,0,0,1,WA,1,0,0,1,0,1,0
+65664777,Caroline,Gerbil,Gerbil,3,Female,3,Short,0,0,1,0,0,WA,1,0,1,1,0,1,0
+65664778,Winston,Gerbil,Gerbil,3,Male,3,Short,0,0,0,0,0,WA,1,1,1,0,0,1,1
+65664770,Cece,Gerbil,Gerbil,3,Female,3,Short,0,0,0,0,1,WA,0,0,0,1,1,1,0
+65664771,Elroy,Guinea Pig,Guinea Pig,1,Male,1,Short,0,0,0,0,0,WA,0,0,0,1,0,0,0
+65664772,Bruno (no white spot),Guinea Pig,Guinea Pig,1,Male,1,Short,0,0,1,0,0,WA,1,1,0,0,1,0,0
+65664773,Lloyd,Guinea Pig,Guinea Pig,1,Male,1,Short,0,0,0,0,1,WA,1,0,0,1,1,1,0
+65664628,Willow,Ferret,Ferret,3,Female,2,Short,0,0,0,0,0,IL,0,0,0,0,1,0,1
+65664627,Nibbles,Ferret,Ferret,3,Male,2,Short,0,0,1,0,0,IL,0,0,0,0,1,1,0
+65662471,Poof,Guinea Pig,Guinea Pig,1,Female,2,Short,0,0,0,0,1,MN,0,0,0,1,0,1,0
+65661751,Ken and Alan,Guinea Pig,Abyssinian,3,Male,2,Short,0,0,0,0,0,IL,0,1,0,1,0,0,0
+65661496,2306-1599 Sky,Guinea Pig,Guinea Pig,2,Male,2,Short,0,0,1,1,0,VA,1,1,0,1,1,1,1
+65661495,2306-1600+1601 Ghost+Jack,Guinea Pig,Guinea Pig,2,Male,2,Short,0,0,0,0,0,VA,1,0,0,0,1,0,0
+65661492,2307-1640 Chubbs,Guinea Pig,Guinea Pig,2,Male,2,Short,0,0,0,0,0,VA,0,0,0,1,1,1,1
+65661493,2307-1621+1622 Kibbles+Nibbles,Guinea Pig,Guinea Pig,2,Female,2,Short,0,0,1,1,0,VA,0,0,1,1,0,1,1
+65661169,JR,Guinea Pig,Guinea Pig,3,Male,2,Short,0,0,0,1,1,CA,0,0,0,0,1,0,1
+65661168,BROWNIE,Guinea Pig,Guinea Pig,3,Male,2,Short,0,0,1,1,0,CA,1,0,0,0,1,0,1
+65660577,Toffee,Guinea Pig,Guinea Pig,3,Male,2,Short,0,0,0,1,0,PA,0,0,0,1,1,0,0
+65659626,PRUE,Guinea Pig,Guinea Pig,4,Female,2,Short,0,0,0,1,0,CA,1,1,1,1,1,0,0
+65659627,PIPER,Guinea Pig,Guinea Pig,4,Female,2,Short,0,0,1,1,0,CA,1,1,1,1,1,0,1
+65659628,PHOEBE,Guinea Pig,Guinea Pig,4,Female,2,Short,0,0,0,1,0,CA,0,0,0,1,0,0,0
+65659006,VIXEN,Ferret,Ferret,2,Female,1,Short,0,0,0,1,0,MA,1,0,0,0,1,0,0
+65659005,FERRIS,Ferret,Ferret,2,Female,1,Short,0,0,0,1,0,MA,0,0,0,1,1,0,0
+65658842,Ozzie Pawsborn,Guinea Pig,Guinea Pig,3,Male,2,Short,0,0,1,1,1,TX,1,0,0,1,0,1,1
+65658303,Mishka,Hamster,Hamster,3,Female,1,Short,0,0,1,1,0,TX,0,0,1,0,1,1,0
+65658304,Blossom,Hamster,Hamster,2,Female,2,Short,0,0,0,1,0,TX,1,1,1,1,0,1,1
+65658158,Zac,Guinea Pig,Guinea Pig,2,Male,2,Short,0,0,1,0,0,TX,0,1,0,1,0,1,0
+65657699,Caramel,Guinea Pig,Guinea Pig,3,Male,2,Short,0,0,0,1,0,TN,0,0,1,0,1,1,0
+65657701,Finley,Guinea Pig,Guinea Pig,3,Male,2,Short,0,0,0,1,0,TN,0,1,1,1,1,0,0
+65657368,Peppa,Guinea Pig,Guinea Pig,3,Female,1,Short,0,0,1,0,1,MN,0,1,0,1,1,0,0
+65657367,Nala,Guinea Pig,Guinea Pig,3,Female,1,Short,0,0,0,1,0,MN,0,0,0,0,0,1,1
+65657366,Sofia,Guinea Pig,Guinea Pig,3,Female,1,Short,0,0,0,0,0,MN,0,1,0,0,1,1,0
+65657324,Scotty *Bonded with Ricky and Pepe*,Guinea Pig,Guinea Pig,3,Male,2,Short,0,0,0,0,0,WI,1,1,1,0,1,1,1
+65657323,Ricky *Bonded with Scotty and Pepe*,Guinea Pig,Guinea Pig,3,Male,2,Short,0,0,0,1,0,WI,1,0,0,0,0,1,1
+65657322,Pepe *Bonded with Ricky and Scotty*,Guinea Pig,Guinea Pig,3,Male,2,Short,0,0,1,0,1,WI,1,0,1,0,0,0,0
+65655920,Noodle,Guinea Pig,Guinea Pig,2,Male,2,Short,0,0,0,0,0,MN,0,0,1,0,1,1,0
+65655921,Karl Heisenberg,Guinea Pig,Guinea Pig,2,Male,2,Short,0,0,0,1,0,MN,0,1,0,0,0,0,0
+65655848,Lime,Guinea Pig,Guinea Pig,2,Male,2,Short,0,0,1,1,0,RI,1,0,1,0,0,1,1
+65655847,Banana,Guinea Pig,Guinea Pig,2,Male,2,Short,0,0,0,1,0,RI,1,1,0,0,0,1,0
+65655216,Gizmo ,Chinchilla,Chinchilla,3,Female,1,Long,0,0,0,1,1,MN,0,0,0,1,0,1,1
+65655203,Theo,Chinchilla,Chinchilla,3,Male,1,Long,0,0,1,0,0,MN,1,0,0,0,1,1,0
+65655057,Kevin,Hamster,Hamster,3,Male,3,Short,0,0,0,0,0,MN,0,0,1,0,0,1,1
+65655029,Snoops and Avery,Ferret,Ferret,3,Male,1,Short,1,0,1,0,0,CT,0,1,0,0,0,0,0
+65654977,Justin,Guinea Pig,Guinea Pig,3,Male,1,Short,0,0,1,0,0,MN,1,0,0,0,1,0,0
+65654951,Oliver,Guinea Pig,Guinea Pig,3,Male,1,Short,0,0,0,1,0,MN,1,1,0,0,0,0,0
+65654772,Mustang,Guinea Pig,Guinea Pig,2,Male,1,Short,0,0,0,0,1,MN,0,1,0,1,0,0,0
+65654745,Brock,Guinea Pig,Guinea Pig,2,Male,1,Short,0,0,0,0,0,MN,0,0,0,0,0,1,1
+65654720,BUTTERCUP,Guinea Pig,Guinea Pig,3,Male,1,Short,0,0,0,0,0,CO,0,0,0,0,0,0,0
+65654713,ZIPPER,Guinea Pig,Guinea Pig,3,Female,2,Short,0,0,1,0,0,MA,0,1,0,0,0,1,0
+65654715,BUTTON,Guinea Pig,Guinea Pig,3,Female,2,Short,0,0,0,1,0,MA,0,0,0,1,0,0,1
+65654497,Willow,Rat,Rat,1,Female,1,Short,0,0,0,0,1,CA,1,1,1,0,0,0,0
+65654500,Apricot,Rat,Rat,1,Female,1,Short,0,0,0,0,0,CA,0,1,1,0,0,0,0
+65654501,Peaches,Rat,Rat,1,Female,1,Short,0,0,1,1,0,CA,1,1,0,0,0,1,1
+65654493,Mazda,Guinea Pig,Guinea Pig,2,Female,1,Short,0,0,0,0,0,MN,0,0,1,1,1,0,0
+65654447,Teddy,Guinea Pig,Guinea Pig,3,Male,1,Short,0,0,0,0,1,MN,0,1,0,1,1,0,1
+65654408,Joey,Guinea Pig,Guinea Pig,3,Male,1,Short,0,0,0,1,0,MN,0,1,0,1,1,0,1
+65654385,Latte,Guinea Pig,Guinea Pig,3,Female,1,Short,0,0,1,0,0,MN,0,0,0,1,1,0,0
+65654355,Mocha,Guinea Pig,Guinea Pig,3,Male,1,Short,0,0,0,0,0,MN,0,1,0,1,1,0,1
+65654329,Marie,Mouse,Mouse,3,Female,2,Short,0,0,0,1,0,CA,0,0,0,1,0,0,0
+65654332,Barnard,Mouse,Mouse,3,Female,2,Short,0,0,0,0,0,CA,0,0,0,0,1,1,1
+65654314,Carmel,Guinea Pig,Guinea Pig,3,Male,1,Short,0,0,1,0,1,MN,1,1,1,0,0,0,1
+65654100,Dale,Guinea Pig,Guinea Pig,2,Male,2,Short,0,0,0,0,0,KS,0,0,1,1,0,0,1
+65654101,Chip,Guinea Pig,Guinea Pig,2,Male,2,Short,0,0,0,1,0,KS,1,1,1,1,1,1,0
+65653578,Chips ,Guinea Pig,Short-Haired,4,Female,1,Short,0,0,0,0,0,AK,0,0,0,0,0,0,0
+65653013,Ruby,Guinea Pig,Guinea Pig,1,Female,2,Short,0,0,1,0,1,NY,0,1,1,1,1,1,0
+65653014,Little Nugget,Guinea Pig,Guinea Pig,1,Female,2,Short,0,0,0,1,0,NY,1,0,0,0,0,1,1
+65652912,Linguini,Guinea Pig,Guinea Pig,3,Male,1,Short,0,0,1,0,0,MA,1,0,1,1,1,1,0
+65652335,Penny,Rat,Rat,2,Female,2,Short,0,0,0,0,0,VA,0,0,0,0,0,0,0
+65652334,Pipper,Rat,Rat,2,Female,2,Short,0,0,1,1,0,VA,1,0,1,0,1,0,1
+65652141,Apple,Guinea Pig,Guinea Pig,2,Male,2,Short,0,0,0,0,1,RI,0,0,0,1,0,1,0
+65650849,#146 Tom & #147 Jerry,Guinea Pig,Guinea Pig,3,Male,3,Short,0,0,0,0,0,NY,0,1,0,0,0,1,0
+65667362,LEVI,Horse,Quarterhorse,4,Male,3,Short,0,0,0,0,0,MA,1,0,0,1,1,0,1
+65659382,Biggie,Miniature Horse,Miniature Horse,4,Male,2,Short,0,0,1,1,1,VT,0,0,0,0,0,1,0
+65659232,Maya,Miniature Horse,Miniature Horse,3,Female,2,Short,0,0,0,0,0,VT,1,1,1,0,0,0,0
+65654017,Eerie,Horse,Quarterhorse,3,Female,2,Short,0,0,0,0,0,TX,0,0,1,0,0,0,0
+65636573,Tallulah,Horse,Quarterhorse,4,Female,2,Short,0,0,0,0,0,TX,1,1,1,1,1,0,0
+65624844,Alistair- MEDICAL HOLD,Horse,Standardbred,2,Male,3,Short,0,0,1,1,1,WV,0,1,0,0,1,0,0
+65613991,Dallas Bar Moon,Horse,Paint / Pinto,4,Male,3,Short,0,1,1,0,1,ID,0,1,0,0,0,1,1
+65612675,Valerie,Horse,Tennessee Walker,3,Female,3,Short,0,0,0,0,0,NC,1,0,1,0,1,0,1
+65612606,Scotty,Horse,Thoroughbred,3,Male,3,Short,0,0,1,1,0,NC,0,1,0,0,0,1,1
+65612553,Homer,Horse,Belgian,3,Male,3,Short,0,0,0,0,0,NC,0,1,0,1,1,0,0
+65601718,PEPPER,Horse,Quarterhorse,4,Female,3,Short,0,0,0,0,1,MA,0,1,1,1,0,1,0
+65597636,Millie,Horse,Paint / Pinto,3,Female,2,Short,0,0,1,0,1,OH,0,0,1,1,1,0,1
+65593816,Toby,Horse,Paint / Pinto,4,Male,3,Short,0,1,1,1,1,ID,0,0,0,0,1,0,1
+65593323,ROCKY,Horse,Quarterhorse,4,Female,3,Short,0,0,0,0,0,MA,0,0,1,0,1,1,0
+65592192,Annie,Horse,Missouri Foxtrotter,3,Female,3,Short,0,0,0,0,1,TX,0,0,0,1,0,0,0
+65577521,Buttercup,Horse,Tennessee Walker,2,Female,2,Short,0,0,1,0,0,TX,1,1,1,1,0,0,1
+65577519,Toast,Horse,Tennessee Walker,2,Male,2,Short,0,0,0,1,0,TX,0,1,1,0,1,1,1
+65577513,Luna,Horse,Tennessee Walker,2,Female,2,Short,0,0,0,1,0,TX,0,0,1,0,0,0,0
+65577510,Bam Bam,Horse,Tennessee Walker,2,Male,2,Short,0,0,1,1,0,TX,0,0,0,1,1,0,0
+65569710,Timber,Horse,Appaloosa,4,Male,2,Short,0,0,0,1,0,OR,0,0,1,0,1,0,0
+65569589,Toots,Horse,Tennessee Walker,2,Male,2,Short,0,0,0,0,1,TX,1,0,0,0,1,1,0
+65568398,Frosted Flake,Horse,Tennessee Walker,3,Male,2,Short,0,0,1,1,1,TX,0,1,0,1,0,1,0
+65567598,Epic,Horse,Quarterhorse,3,Male,2,Short,0,0,0,1,1,TX,0,1,0,0,0,1,0
+65548004,Gloria,Horse,Thoroughbred,4,Male,2,Short,0,0,0,1,1,VT,0,0,0,0,0,0,1
+65547818,Eugene,Miniature Horse,Miniature Horse,3,Male,2,Short,0,0,0,1,1,VT,0,0,0,0,0,1,0
+65547753,Barney,Horse,Standardbred,3,Male,2,Short,0,0,1,1,1,VT,1,0,1,0,1,0,0
+65547676,Dilly,Pony,Pony,4,Male,1,Short,0,0,1,1,1,VT,0,0,0,1,1,1,0
+65542209,Yale,Horse,Quarterhorse,3,Male,2,Short,0,0,0,1,1,TX,1,0,1,0,0,1,1
+65541963,Brandy,Horse,Quarterhorse,4,Female,2,Short,0,0,0,1,1,VA,1,1,1,1,0,0,0
+65541146,Loyal,Horse,Tennessee Walker,3,Male,2,Short,0,0,1,1,1,TX,0,1,1,1,0,0,1
+65538763,Heather,Horse,Tennessee Walker,4,Female,2,Short,0,0,0,1,1,TX,1,0,0,0,0,0,0
+65537557,Lilly - Adoption Pending,Horse,Quarterhorse,4,Female,1,Short,0,0,1,1,1,NH,1,1,0,0,1,1,1
+65533935,Lina,Horse,Paso Fino,4,Female,3,Short,0,0,0,1,1,WV,1,0,0,1,1,0,0
+65533728,Hopkins,Horse,Saddlebred,3,Male,3,Short,0,0,1,1,1,WV,0,0,0,0,0,0,0
+65533628,Honey,Horse,Standardbred,4,Female,2,Short,0,0,1,1,1,SD,1,0,0,0,1,1,0
+65533625,Summer,Horse,Quarterhorse,3,Female,3,Short,0,0,1,1,0,SD,1,1,0,1,1,1,0
+65533626,Fernando,Horse,Paso Fino,3,Male,2,Short,0,0,1,1,1,SD,1,0,0,0,1,0,0
+65533627,Benny,Horse,Quarterhorse,3,Female,2,Short,0,0,1,1,0,SD,0,0,0,1,1,0,1
+65533618,Azul,Horse,Paint / Pinto,3,Male,3,Short,0,0,0,1,0,WV,0,1,1,0,0,1,1
+65533420,Mimosa,Horse,Quarterhorse,3,Female,3,Short,0,0,0,1,0,WV,1,0,0,1,1,1,1
+65533107,Fern,Horse,Quarterhorse,3,Female,3,Short,0,0,0,1,1,WV,0,0,0,1,1,0,0
+65533018,Cambria,Horse,Saddlebred,1,Female,3,Short,0,0,1,1,0,WV,1,0,0,1,0,1,0
+65532346,Skeeter,Horse,Paso Fino,4,Male,3,Short,0,0,0,1,0,WV,0,1,1,1,0,1,1
+65531878,Emma,Horse,Quarterhorse,3,Female,3,Short,0,0,0,1,0,SD,1,0,1,0,0,0,0
+65512356,Zelda,Horse,Quarterhorse,4,Female,2,Short,0,0,1,1,1,NV,0,0,1,1,1,0,0
+65498608,Argo,Horse,Grade,3,Male,3,Short,0,0,0,1,0,LA,0,1,1,1,0,1,1
+65466427,ROCK,Pony,Pony,4,Male,2,Short,0,0,0,1,0,MA,1,0,0,1,1,1,1
+65466426,FAITH,Horse,Thoroughbred,3,Female,3,Short,0,0,1,1,0,MA,1,0,0,1,0,0,1
+65442355,Patrick,Horse,Tennessee Walker,3,Male,3,Short,0,0,0,1,1,IA,0,1,0,0,0,0,0
+65442356,Mesita,Horse,Grade,2,Female,3,Short,0,0,1,1,0,IA,0,0,1,1,0,0,1
+65442354,Quiche,Horse,Tennessee Walker,3,Male,3,Short,0,0,1,1,0,IA,0,1,0,1,1,0,1
+65442137,Marsh,Horse,Tennessee Walker,3,Male,3,Short,0,0,1,1,0,IA,0,1,0,0,1,1,1
+65442134,Jeremiah,Horse,Tennessee Walker,2,Male,3,Short,0,0,1,1,1,IA,0,0,0,0,1,0,0
+65437424,Ethel & Fred - Spayed Jenny; Gelded Jack/NonRiding Companions - Bonded Pair,Donkey,Donkey,3,Female,1,Short,0,0,1,1,0,CA,1,1,1,0,0,1,1
+65437379,Elliott - Gelding/Bay/Mustang - Yearling,Horse,Mustang,2,Male,3,Short,0,0,1,1,0,CA,1,0,1,0,1,0,0
+65424004,Sahara,Horse,Warmblood,4,Female,2,Short,0,0,1,1,0,OR,1,1,0,1,1,0,0
+65423937,Spencer,Horse,Quarterhorse,4,Male,2,Short,0,1,0,1,1,OR,0,0,1,0,0,0,1
+65423878,Night Whispers,Horse,Saddlebred,4,Female,2,Short,0,0,0,1,0,OR,0,1,0,0,0,0,0
+65423680,A Rose for Mary,Horse,Saddlebred,4,Female,2,Short,0,1,0,1,1,OR,1,0,0,0,0,1,1
+65422827,Sinful,Horse,Saddlebred,4,Female,2,Short,0,0,1,1,0,OR,0,1,1,0,1,0,1
+65422751,Razzle Dazzle,Horse,Saddlebred,4,Female,2,Short,0,0,1,1,0,OR,0,1,0,0,1,1,0
+65422709,Marion,Horse,Arabian,3,Female,2,Short,0,1,0,1,0,OR,0,0,0,0,1,1,1
+65422692,Johnny,Horse,Thoroughbred,4,Male,2,Short,0,0,0,1,0,OR,1,1,0,0,0,1,0
+65422041,Shania,Horse,Quarterhorse,3,Female,2,Short,0,0,0,1,1,OR,0,0,0,0,0,0,0
+65422009,Cody,Horse,Appaloosa,3,Male,2,Short,0,1,1,1,0,OR,1,1,0,0,1,1,1
+65421753,Sebastian,Horse,Quarterhorse,3,Male,2,Short,0,0,1,1,0,OR,0,1,1,1,0,0,1
+65417849,Jack - Gelding/Palomino/Mustang - Project Horse,Horse,Mustang,3,Male,3,Short,0,0,0,1,0,CA,1,0,1,0,1,0,0
+65417502,tabasco,Horse,Quarterhorse,4,Male,2,Short,0,0,0,1,0,VA,1,0,0,1,1,1,0
+65416201,Justice,Horse,Quarterhorse,3,Male,2,Short,0,1,0,1,1,OR,1,1,1,0,0,1,1
+65384080,Prissy,Horse,Quarterhorse,4,Female,2,Short,0,0,1,1,1,PA,1,0,0,1,0,1,1
+65384058,Milo,Horse,Quarterhorse,4,Male,2,Short,0,0,0,1,1,PA,0,0,0,1,1,1,0
+65384072,Spirit,Horse,Quarterhorse,4,Female,2,Short,0,0,0,1,1,PA,1,0,0,1,0,0,0
+65384083,Allspice,Horse,Quarterhorse,4,Male,2,Short,0,0,1,1,1,PA,1,0,1,0,0,1,1
+65384090,Shannon,Horse,Quarterhorse,4,Female,2,Short,0,0,0,1,1,PA,0,1,1,0,0,0,0
+65384062,Paprika,Horse,Quarterhorse,4,Female,2,Short,0,0,0,1,1,PA,1,0,1,1,0,0,1
+65372867,Scout,Miniature Horse,Miniature Horse,3,Male,1,Short,0,0,0,1,1,TX,0,1,0,0,0,1,1
+65370861,Gunner,Horse,Standardbred,4,Male,3,Short,0,1,1,1,1,VT,0,0,1,0,0,1,0
+65370825,Flicker,Pony,Pony,4,Female,2,Short,0,1,1,1,0,VT,1,0,0,0,1,1,1
+65363641,Santiago,Horse,Quarterhorse,4,Female,2,Short,0,0,0,1,0,SD,1,0,0,0,0,0,1
+65332909,tricky,Horse,Quarterhorse,4,Female,2,Short,0,0,1,1,1,VA,1,1,0,1,0,0,1
+65325715,Lakota,Horse,Appaloosa,3,Female,3,Short,0,0,1,1,1,LA,0,1,1,0,0,0,0
+65308095,Rio,Horse,Quarterhorse,3,Male,2,Short,0,0,0,1,1,TX,1,0,1,1,1,0,0
+65308141,Atlas,Horse,Mustang,3,Male,3,Short,0,0,1,0,1,TX,0,1,0,1,1,0,1
+65308212,Comet,Horse,Quarterhorse,3,Male,3,Short,0,0,0,1,1,TX,0,0,1,1,0,0,1
+65308110,Jack Frost,Horse,Quarterhorse,3,Male,3,Short,0,0,0,1,1,TX,0,0,1,1,1,0,0
+65308193,Rummy `Dance Supreme`,Horse,Thoroughbred,3,Male,4,Short,0,0,0,1,1,TX,0,1,0,0,0,0,1
+65307796,Perrin,Horse,Quarterhorse,3,Male,2,Short,0,0,0,1,1,UT,0,0,0,0,0,0,0
+65260967,Chief - Adoption Pending,Horse,Mustang,3,Male,3,Short,0,0,1,1,1,NH,0,1,1,1,1,1,0
+65260966,Frankie,Horse,Paint / Pinto,4,Male,2,Short,0,0,1,0,1,NH,0,0,0,0,0,0,0
+65248924,Dawson,Horse,Quarterhorse,3,Female,2,Short,0,0,1,1,1,NE,1,1,1,0,0,0,0
+65252116,Sia,Horse,Paso Fino,4,Female,2,Short,0,0,1,1,1,WV,1,0,0,0,0,1,0
+65248584,Hollywood - Sponsorship only,Horse,Quarterhorse,3,Female,2,Short,0,1,1,0,1,NE,0,0,0,0,1,0,0
+65248976,Betty,Horse,Belgian,4,Female,3,Short,0,1,1,1,1,NY,0,0,0,0,0,0,0
+65247793,Clifford - Sponsorship only,Horse,Quarterhorse,4,Male,2,Short,0,1,1,1,1,NE,0,1,1,1,1,0,0
+65247724,Tully,Horse,Thoroughbred,4,Male,3,Short,0,1,1,1,1,NE,0,1,0,1,1,0,0
+65247654,Touch - Partially sponsored,Horse,Missouri Foxtrotter,4,Female,2,Short,0,1,1,1,1,NE,1,0,1,1,1,0,0
+65247583,Taco - Sponsorship only,Horse,Peruvian Paso,4,Male,1,Short,0,1,1,1,1,NE,0,1,0,1,0,0,0
+65247512,Spike,Donkey,Donkey,3,Male,1,Short,0,0,1,1,1,NE,1,1,0,1,1,0,1
+65247411,Sonny - Partially sponsored,Horse,Tennessee Walker,4,Male,3,Short,0,1,1,1,1,NE,0,0,0,1,0,0,0
+65247069,Odie - Sponsorship only,Horse,Belgian,4,Male,4,Short,0,1,1,1,1,NE,0,0,1,0,1,1,1
+65668902,JAIME,Parakeet,Parakeet (Other),2,Female,1,Unknown,0,0,1,1,1,VA,0,0,1,0,1,0,0
+65668499,Cotton,Duck,Duck,3,Unknown,2,Unknown,0,0,1,1,1,OH,0,0,1,0,0,0,0
+65668311,B.B.,Parrot,Quaker Parakeet,4,Unknown,1,Unknown,0,0,0,1,1,CO,1,0,0,0,0,1,0
+65668125,A5568259,Dove,Pigeon,3,Unknown,2,Unknown,0,0,0,1,0,CA,1,0,0,0,0,0,1
+65667223,PILOT,Dove,Pigeon,3,Unknown,2,Unknown,0,0,0,1,0,CO,0,0,0,1,0,1,0
+65666898,Polaris,Dove,Pigeon,3,Male,2,Unknown,0,0,1,1,1,IL,0,1,0,1,0,1,1
+65664745,Idyll,Dove,Dove,3,Male,2,Unknown,0,0,1,1,0,CA,0,1,0,0,0,1,1
+65664744,Wilbur,Dove,Pigeon,3,Male,2,Unknown,0,0,1,1,1,CA,1,1,1,0,0,1,0
+65664746,Orville,Dove,Pigeon,3,Male,2,Unknown,0,0,0,1,0,CA,0,1,0,1,1,0,0
+65660473,Gelato,Dove,Dove,3,Male,1,Unknown,0,0,1,1,0,MA,0,1,0,0,1,1,1
+65660287,Platinum,Dove,Dove,3,Male,1,Unknown,0,0,1,1,0,MA,0,1,0,0,0,0,1
+65660214,Thin Mints,Dove,Dove,3,Male,1,Unknown,0,0,0,1,0,MA,1,0,1,1,0,1,0
+65660085,Sunset Sherbet,Dove,Dove,3,Female,1,Unknown,0,0,1,1,1,MA,0,1,1,1,0,0,0
+65659511,Big Papa,Chicken,Chicken,1,Male,1,Unknown,0,0,0,1,0,CO,0,1,1,0,1,0,1
+65658435,Chicken21 - Adopted!,Chicken,Chicken,1,Unknown,1,Unknown,0,0,0,1,0,GA,1,0,0,0,0,1,0
+65658352,Ziggy,Parrot,Cockatoo,4,Male,3,Unknown,0,0,0,1,0,CO,1,1,0,0,1,1,0
+65658353,Kyaro,Parrot,Macaw,4,Male,3,Unknown,0,0,0,1,1,CO,0,0,1,1,0,1,0
+65658345,Lindy,Parrot,Macaw,4,Female,3,Unknown,0,1,0,1,0,CO,0,0,0,0,0,0,0
+65658351,Sam,Parrot,Cockatoo,4,Male,2,Unknown,0,0,1,1,0,CO,0,0,1,1,1,0,0
+65658344,Franklin,Parrot,Cockatoo,4,Male,2,Unknown,0,0,0,1,1,CO,0,1,0,0,1,0,0
+65658345,Lindy,Parrot,Macaw,4,Female,3,Unknown,0,1,0,0,0,CO,0,0,1,0,1,0,0
+65658344,Franklin,Parrot,Cockatoo,4,Male,2,Unknown,0,0,0,0,0,CO,0,1,0,0,0,1,1
+65658350,Jessie,Parrot,Cockatoo,4,Female,3,Unknown,0,0,0,0,0,CO,0,1,0,0,0,1,0
+65658346,Chopper,Parrot,Macaw,4,Female,3,Unknown,0,0,1,0,0,CO,0,1,1,0,0,1,1
+65658347,Bodhi,Parrot,Macaw,4,Male,3,Unknown,0,0,0,0,0,CO,0,0,0,1,1,1,1
+65658167,Tabby,Parrot,Macaw,4,Female,3,Unknown,0,0,0,1,1,CO,1,0,1,0,0,1,1
+65657862,Charlie,Parrot,Budgie / Budgerigar,3,Male,2,Unknown,0,0,0,0,0,NY,1,1,1,0,1,0,0
+65654721,GOLDIE,Chicken,Chicken,2,Female,2,Unknown,0,0,1,0,0,CO,0,0,0,1,0,0,1
+65646628,Nick,Parrot,Budgie / Budgerigar,3,Male,1,Unknown,0,0,0,0,0,MO,1,0,0,0,0,0,1
+65646627,Elmer,Parrot,Budgie / Budgerigar,3,Male,1,Unknown,0,0,0,1,1,MO,0,1,1,1,0,0,0
+65640004,Ricard,Parakeet,Parakeet (Other),3,Female,2,Unknown,0,0,0,0,0,MD,0,0,0,0,1,0,1
+65639990,Peka,Parakeet,Parakeet (Other),3,Female,2,Unknown,0,0,1,1,0,MD,0,0,0,1,0,0,0
+65637276,CHICKADEE,Chicken,Chicken,2,Male,2,Unknown,0,0,0,0,0,CA,1,1,0,0,0,0,1
+65636913,A114876,Duck,Duck,3,Unknown,1,Unknown,0,0,0,1,0,CA,0,1,0,0,0,1,1
+65636910,A114875,Chicken,Chicken,3,Female,1,Unknown,0,0,0,0,1,CA,0,0,0,1,0,0,1
+65636916,A114687,Chicken,Chicken,3,Female,2,Unknown,0,0,1,0,0,CA,1,0,1,0,0,1,0
+65636637,Azkaban,Chicken,Chicken,3,Male,2,Unknown,0,0,0,1,0,CA,0,0,0,0,1,0,1
+65634592,Coconut and Pineapple,Parrot,Conure,2,Unknown,1,Unknown,0,0,0,0,0,RI,1,1,0,0,0,1,1
+65635215,Waffle,Parrot,Lovebird,3,Female,2,Unknown,0,0,0,0,0,ND,0,1,0,1,0,0,1
+65635180,Groot and Rocket,Parrot,Conure,3,Unknown,1,Unknown,0,0,1,0,0,RI,1,0,1,1,0,0,0
+65634930,Gamora and Nebula,Parrot,Conure,3,Unknown,1,Unknown,0,0,0,1,0,RI,0,1,0,1,1,1,0
+65634831,Cujo,Parrot,Quaker Parakeet,3,Unknown,1,Unknown,0,0,0,1,1,RI,0,0,1,0,1,0,1
+65634142,Cecil,Parakeet,Parakeet (Other),3,Male,1,Unknown,0,0,0,1,0,SD,1,0,1,1,1,0,0
+65629504,Rory,Parrot,Conure,4,Male,1,Unknown,0,0,1,1,0,CO,0,1,0,0,1,1,0
+65623858,Bryce,Parrot,Budgie / Budgerigar,3,Male,2,Unknown,0,0,1,1,0,VA,1,0,1,0,0,0,1
+65623859,Denali,Parrot,Budgie / Budgerigar,3,Unknown,2,Unknown,0,0,1,1,0,VA,0,0,1,0,1,1,0
+65623865,Yosemite,Parrot,Budgie / Budgerigar,3,Unknown,2,Unknown,0,0,1,1,0,VA,0,1,1,1,1,0,1
+65623861,Shenandoah,Parrot,Budgie / Budgerigar,3,Unknown,2,Unknown,0,0,1,1,0,VA,0,0,0,1,1,0,0
+65623860,Yellowstone,Parrot,Budgie / Budgerigar,3,Female,2,Unknown,0,0,0,1,1,VA,1,0,0,0,0,0,1
+65623857,Biscayne,Parrot,Budgie / Budgerigar,3,Unknown,2,Unknown,0,0,0,1,0,VA,0,0,1,0,0,0,0
+65623862,Acadia,Parrot,Budgie / Budgerigar,3,Unknown,2,Unknown,0,0,0,1,0,VA,0,1,1,1,1,0,1
+65622257,Milou,Dove,Pigeon,3,Male,2,Unknown,0,0,1,1,1,IL,1,0,0,0,0,1,0
+65622155,Rhonda,Dove,Pigeon,3,Female,1,Unknown,0,0,1,1,1,IL,0,1,0,0,0,1,0
+65620315,Bird,Chicken,Chicken,3,Female,1,Unknown,0,0,1,0,0,CA,0,1,0,0,1,0,1
+65620316,Bird,Chicken,Chicken,3,Female,1,Unknown,0,0,0,0,1,CA,1,0,0,1,0,0,1
+65618143,Violet,Parrot,African Grey,3,Unknown,2,Unknown,0,0,1,0,0,MI,1,0,1,0,0,1,0
+65617485,FIREQUACKER,Duck,Duck,1,Male,1,Unknown,0,0,1,1,0,CO,1,0,0,0,1,1,0
+65617486,SAGE,Duck,Duck,2,Male,1,Unknown,0,0,0,0,0,CO,0,0,1,0,0,0,1
+65617488,THYME,Duck,Duck,2,Male,1,Unknown,0,0,0,0,0,CO,0,1,0,1,1,0,0
+65617454,LADYBIRD,Finch,Finch,3,Female,1,Unknown,0,0,0,1,1,CO,0,0,0,0,0,1,1
+65617464,MORDELLIDAE,Finch,Finch,3,Female,1,Unknown,0,0,1,0,0,CO,1,1,0,1,0,0,0
+65617457,POTATO BEETLE,Finch,Finch,3,Male,1,Unknown,0,0,0,0,0,CO,0,0,0,0,0,0,1
+65617462,POLYPHAGA,Finch,Finch,3,Female,1,Unknown,0,0,0,0,0,CO,0,1,0,0,0,0,1
+65617455,HISTERIDAE,Finch,Finch,3,Female,1,Unknown,0,0,1,1,0,CO,1,0,0,0,0,0,1
+65617459,CLICK BEETLE,Finch,Finch,3,Female,1,Unknown,0,0,1,0,0,CO,0,0,0,0,1,0,0
+65617427,HYDROPHILIDAE,Finch,Finch,3,Female,1,Unknown,0,0,0,0,1,CO,0,1,1,1,0,1,0
+65617428,PTILIIDAE,Finch,Finch,3,Female,1,Unknown,0,0,0,0,0,CO,0,0,0,0,1,0,1
+65617433,CARPET BEETLE,Finch,Finch,3,Male,1,Unknown,0,0,1,1,0,CO,0,0,0,1,1,0,1
+65617431,TIGER BEETLE,Finch,Finch,3,Male,1,Unknown,0,0,0,0,0,CO,0,0,1,1,1,0,1
+65617440,SCARAB,Finch,Finch,3,Male,1,Unknown,0,0,0,0,0,CO,0,0,0,0,1,0,1
+65617445,SKIN BEETLE,Finch,Finch,3,Male,1,Unknown,0,0,0,1,1,CO,0,0,1,1,0,1,0
+65617443,LADYBUG,Finch,Finch,3,Female,1,Unknown,0,0,0,1,0,CO,0,0,0,0,0,0,1
+65617444,BLISTER BEETLE,Finch,Finch,3,Female,1,Unknown,0,0,1,1,0,CO,0,0,0,1,0,0,1
+65617449,EROTYLIDAE,Finch,Finch,3,Male,1,Unknown,0,0,1,1,0,CO,1,0,0,0,1,1,1
+65617450,BLACK BEETLE,Finch,Finch,3,Male,1,Unknown,0,0,1,1,0,CO,1,1,1,1,0,0,1
+65617421,PHENGODIDAE,Finch,Finch,3,Male,1,Unknown,0,0,1,1,1,CO,0,1,0,1,0,0,1
+65617420,EMERALD ASH BORER,Finch,Finch,3,Male,1,Unknown,0,0,1,1,0,CO,0,0,1,1,0,0,0
+65617425,SOLDIER BEETLE,Finch,Finch,3,Female,1,Unknown,0,0,1,1,0,CO,1,0,1,1,0,1,1
+65617426,RHINOCEROS BEETLE,Finch,Finch,3,Male,1,Unknown,0,0,1,1,0,CO,1,1,1,0,1,0,1
+65617430,STAG BEETLE,Finch,Finch,3,Male,1,Unknown,0,0,1,1,0,CO,0,1,0,0,0,0,0
+65617432,LONGHORN BEETLE,Finch,Finch,3,Male,1,Unknown,0,0,1,1,1,CO,1,0,1,0,1,0,1
+65617451,WEEVIL,Finch,Finch,3,Male,1,Unknown,0,0,1,1,0,CO,0,1,0,0,0,0,1
+65616516,Jack,Duck,Duck,3,Male,3,Unknown,0,0,1,1,0,OH,0,1,0,1,0,0,0
+65616445,Hermes,Parrot,Amazon,3,Unknown,2,Unknown,0,0,1,1,0,MI,0,0,0,1,1,0,0
+65615937,PEBBLE,Dove,Pigeon,2,Unknown,2,Unknown,0,0,1,1,0,CA,0,1,0,1,1,1,0
+65615843,Hans,Chicken,Chicken,3,Male,2,Unknown,0,0,1,1,0,CA,0,0,0,0,1,1,0
+65615844,Franz,Chicken,Chicken,3,Male,2,Unknown,0,0,1,0,1,CA,1,0,1,1,1,1,0
+65615747,Cyril and Ares,Parrot,Macaw,3,Male,4,Unknown,0,0,1,0,0,VA,0,0,1,0,0,1,1
+65615610,Pixel,Parrot,Lovebird,2,Female,1,Unknown,0,0,0,1,0,MI,1,0,0,0,0,0,0
+65615525,Jemima Puddle Duck,Duck,Duck,3,Female,1,Unknown,0,0,0,0,0,PA,0,1,0,0,1,0,0
+65588324,Rooster,Parrot,Cockatiel,3,Male,2,Unknown,0,0,0,0,0,ON,1,1,0,0,0,0,0
+65615158,Harvey,Parrot,Macaw,2,Male,3,Unknown,0,0,1,1,0,MI,0,0,1,1,1,0,0
+65610759,Stella,Parrot,Macaw,3,Male,3,Unknown,0,0,0,1,1,FL,1,1,1,1,1,0,0
+65606546,Beyonce,Dove,Dove,3,Female,1,Unknown,0,0,0,0,0,MN,0,0,1,0,0,0,0
+65606046,Taylor Swift,Dove,Dove,3,Unknown,1,Unknown,0,0,1,1,0,MN,0,0,0,0,1,0,1
+65606047,Billie Eilish,Dove,Dove,3,Unknown,1,Unknown,0,0,0,0,0,MN,0,0,1,0,0,1,1
+65604145,KIMI,Chicken,Chicken,2,Female,1,Unknown,0,0,1,0,0,CA,1,0,1,1,1,0,1
+65604140,CHUCKIE,Chicken,Chicken,2,Male,1,Unknown,0,0,0,1,0,CA,1,1,0,0,0,0,0
+65604141,TOMMY,Chicken,Chicken,2,Male,2,Unknown,0,0,0,0,1,CA,0,0,1,0,0,1,0
+65603821,Tom Crooster,Chicken,Chicken,2,Male,2,Unknown,0,0,1,1,0,TX,0,1,1,1,1,1,1
+65667352,YURTLE THE TURTLE,Turtle,Turtle,3,Unknown,1,Unknown,0,0,0,0,0,CA,1,1,1,0,0,0,0
+65666508,Valkyrie,Reptile,Bearded Dragon,3,Female,2,Scale,0,0,0,0,0,NC,1,1,0,0,1,1,1
+65658518,Sammy,Turtle,Turtle,2,Female,1,Unknown,0,0,1,0,0,CA,0,0,0,0,0,1,1
+65654328,William,Reptile,Iguana,3,Unknown,2,Scale,0,0,0,1,1,CA,0,0,0,0,0,0,1
+65653192,FRANK,Turtle,Turtle,3,Male,3,Unknown,0,0,0,0,0,CA,1,0,0,1,0,0,0
+65649899,Hank,Reptile,Bearded Dragon,3,Male,2,Scale,0,0,1,0,0,WI,1,1,1,0,0,0,0
+65648014,Popeye,Reptile,Gecko,3,Unknown,1,Scale,0,0,1,1,0,ON,0,1,0,0,0,1,0
+65647872,Gus,Turtle,Turtle,3,Male,3,Unknown,0,0,1,0,0,ON,0,1,1,0,0,0,0
+65647873,Gord,Turtle,Turtle,3,Male,3,Unknown,0,0,1,0,0,ON,0,0,0,0,1,0,1
+65644593,Finn,Reptile,Gecko,3,Male,2,Scale,0,0,0,1,1,MI,0,0,0,0,1,0,1
+65644572,Alroy Central American Wood Turtle,Turtle,Turtle,3,Male,2,Unknown,0,0,0,0,0,VA,1,1,0,0,0,0,0
+65641675,MISTER SLITHERS,Snake,Snake,3,Unknown,2,Scale,0,0,1,0,0,NE,1,0,0,1,1,0,1
+65637246,Other,Turtle,Turtle,3,Female,1,Unknown,0,0,0,1,0,CA,1,1,0,1,1,0,0
+65634097,Cerberus,Snake,Python,3,Unknown,2,Scale,0,0,0,0,0,MA,1,0,1,0,0,1,1
+65632534,Pharaoh,Reptile,Lizard,2,Male,2,Scale,0,0,0,0,0,FL,0,0,0,1,0,0,1
+65632151,NINJA,Turtle,Turtle,3,Male,1,Unknown,0,0,1,1,1,CA,0,1,0,0,1,1,1
+65627647,Jumanji,Snake,Snake,2,Male,2,Scale,0,0,0,1,0,IN,0,0,0,0,0,0,0
+65627176,Popcorn,Reptile,Lizard,3,Male,2,Scale,0,0,0,1,0,OH,0,1,1,0,0,1,1
+65625622,Central American Wood Turtle,Turtle,Turtle,3,Male,2,Unknown,0,0,0,1,0,VA,0,0,1,0,0,0,0
+65624927,A1278983,Turtle,Turtle,3,Female,2,Unknown,0,0,1,1,0,NV,0,1,1,1,0,1,0
+65621717,Shelly and Lucky ,Turtle,Red-Eared Slider,3,Female,2,Scale,0,0,0,1,1,CT,1,0,1,1,0,0,1
+65621572,Napoleon E Painted (good 1st turtle),Turtle,Painted,4,Male,1,Scale,0,0,0,0,0,MD,0,1,0,1,1,0,0
+65616117,SQUIRTLE,Turtle,Turtle,3,Unknown,3,Unknown,0,0,1,0,0,MD,0,0,0,1,0,1,0
+65616119,CRUSH,Turtle,Turtle,3,Unknown,1,Unknown,0,0,0,1,0,MD,0,1,1,0,0,0,0
+65610206,Na&#39;imahl,Reptile,Lizard,3,Female,2,Scale,0,0,0,0,1,OH,0,0,0,0,1,0,1
+65600522,Rita,Reptile,Bearded Dragon,3,Female,2,Scale,0,0,0,1,0,WI,0,1,0,1,0,0,0
+65595546,DAVE,Turtle,Turtle,3,Male,1,Unknown,0,0,1,0,0,NY,0,1,1,0,1,1,1
+65579726,Roxy,Reptile,Bearded Dragon,3,Female,2,Scale,0,0,1,1,1,WA,1,0,0,0,0,0,0
+65579287,Steve Erwin,Reptile,Lizard,3,Male,2,Scale,0,0,0,0,1,FL,0,1,0,0,1,0,1
+65576679,Spinderella,Other Animal,Tarantula,3,Female,1,Hairless,0,0,1,0,0,CA,1,0,0,1,1,1,0
+65576430,Kermit & Frogger,Amphibian,Tree Frog,3,Male,2,Hairless,0,0,0,1,0,CA,0,1,1,1,0,0,0
+65576383,Medusa,Snake,Ball Python,3,Female,2,Scale,0,0,0,0,0,CA,0,1,1,0,1,0,0
+65576380,Brenda,Snake,Ball Python,3,Female,1,Scale,0,0,0,0,1,OH,0,0,0,0,1,0,0
+65576028,Joan,Snake,Snake,3,Male,2,Scale,0,0,1,1,0,OH,0,0,0,1,0,0,1
+65576029,Carpet,Reptile,Lizard,3,Male,2,Scale,0,0,0,0,0,OH,0,0,1,1,1,0,0
+65576030,Charley,Reptile,Lizard,3,Male,2,Scale,0,0,0,1,0,OH,0,1,0,0,1,0,0
+65576032,Eve,Snake,Snake,3,Male,2,Scale,0,0,1,0,0,OH,1,0,1,1,1,0,0
+65576033,Nox,Reptile,Gecko,3,Male,2,Scale,0,0,1,0,1,OH,0,0,0,1,0,0,0
+65575756,LOCHLAN,Turtle,Turtle,3,Female,1,Unknown,0,0,1,1,0,CO,1,0,1,0,0,0,0
+65575168,SOPHIE,Turtle,Turtle,3,Female,2,Unknown,0,0,0,0,0,NV,1,0,0,0,0,1,1
+65575173,EMMY,Turtle,Turtle,3,Female,2,Unknown,0,0,0,0,0,NV,0,0,0,0,1,1,0
+65574665,Mango,Reptile,Gecko,2,Female,2,Scale,0,0,1,0,1,IL,1,0,1,1,1,0,0
+65573221,Vance,Turtle,Turtle,3,Male,3,Unknown,0,0,1,1,0,ON,1,1,1,1,1,0,1
+65573222,Shena,Turtle,Turtle,2,Female,3,Unknown,0,0,1,0,0,ON,1,0,0,0,0,0,0
+65573223,Scooter,Turtle,Turtle,3,Male,3,Unknown,0,0,1,1,1,ON,1,1,1,1,0,0,1
+65573224,Toby,Turtle,Turtle,3,Male,3,Unknown,0,0,1,1,0,ON,0,0,0,0,0,1,0
+65566622,Sea Bug,Other Animal,Hermit Crab,2,Unknown,2,Shell,0,0,1,1,0,MO,0,0,0,1,0,1,1
+65566468,RUTH,Turtle,Turtle,3,Female,1,Unknown,0,0,0,1,0,CO,1,1,0,0,0,0,0
+65563594,Medusa,Snake,Snake,2,Male,2,Scale,0,0,1,1,0,IN,1,0,1,1,0,1,0
+65542110,Dwight,Reptile,Gecko,3,Male,2,Scale,0,0,0,1,0,NH,0,0,0,0,0,0,0
+65533347,Nightshade,Reptile,Gecko,3,Male,2,Scale,0,0,1,1,1,WA,0,1,0,0,0,1,0
+65530772,Letty,Snake,Snake,2,Male,2,Scale,0,0,0,1,0,TX,1,0,0,1,0,1,1
+65530200,SATURN,Turtle,Turtle,3,Female,2,Unknown,0,0,1,1,0,CA,0,0,1,0,1,0,1
+65530199,RAPHA,Turtle,Turtle,3,Male,1,Unknown,0,0,0,1,1,CA,0,0,1,1,1,0,1
+65526255,Milo,Reptile,Lizard,2,Male,1,Scale,0,0,0,1,1,WA,1,0,0,0,1,0,0
+65526256,Eddie,Reptile,Gecko,3,Male,1,Scale,0,0,0,1,1,WA,1,1,0,1,0,1,1
+65505758,Zava,Snake,Ball Python,2,Unknown,2,Scale,0,0,1,1,1,CT,1,1,0,1,0,1,0
+65501926,Mosses,Turtle,Turtle,4,Unknown,1,Unknown,0,0,0,0,1,TX,0,0,1,1,0,0,0
+65499129,Elmer,Turtle,Turtle,3,Male,3,Unknown,0,0,1,1,1,ON,1,0,0,0,0,1,1
+65498775,Smokey,Reptile,Gecko,2,Female,2,Scale,0,0,0,1,1,WI,0,1,0,1,1,0,1
+65496428,BRITTANY,Turtle,Turtle,3,Female,2,Unknown,0,0,1,1,1,CA,1,1,1,1,1,1,0
+65496429,TIFFANY,Turtle,Turtle,3,Female,1,Unknown,0,0,0,1,1,CA,0,0,0,0,0,0,0
+65495381,PONTOON,Reptile,Lizard,3,Male,2,Scale,0,0,0,1,1,NY,0,0,1,1,0,1,0
+65490113,Henderson,Snake,Ball Python,3,Male,2,Scale,0,0,0,1,1,CA,0,1,0,0,0,0,1
+65487426,Ernie,Turtle,Turtle,3,Female,3,Unknown,0,0,1,0,1,ON,0,0,1,1,0,0,1
+65487326,Motu,Turtle,Turtle,3,Male,3,Unknown,0,0,1,0,1,ON,1,0,0,0,0,0,1
+65487327,Tanon,Turtle,Turtle,3,Male,3,Unknown,0,0,1,1,0,ON,1,1,1,0,1,0,1
+65471884,Squirtle,Reptile,Gecko,3,Male,1,Scale,0,0,0,0,0,NC,0,0,1,0,0,1,0
+65471901,Treecko,Reptile,Gecko,2,Female,1,Scale,0,0,0,0,1,NC,0,1,0,0,0,1,1
+65471887,Charmander,Reptile,Gecko,3,Male,1,Scale,0,0,1,1,0,NC,1,1,0,1,0,0,0
+65483575,Warbucks,Turtle,Eastern Box,1,Unknown,1,Scale,0,0,0,1,1,MS,0,1,1,0,0,0,1
+65483535,Grace,Turtle,Eastern Box,1,Unknown,1,Scale,0,0,0,1,0,MS,0,0,1,0,1,0,0
+65479444,Nala,Turtle,Three-Toed Box,3,Female,1,Scale,0,0,0,1,0,MS,0,0,0,0,0,0,1
+65478915,Pico,Reptile,Lizard,3,Male,2,Scale,0,0,1,1,1,IN,0,1,0,0,0,0,0
+65478916,Chompers,Reptile,Lizard,3,Unknown,2,Scale,0,0,0,1,0,IN,0,1,0,0,1,1,0
+65478313,Sunflower,Turtle,Three-Toed Box,3,Female,1,Scale,0,0,0,1,1,MS,1,0,1,0,1,0,0
+65478053,Clover,Turtle,Mud,3,Female,1,Scale,0,0,1,1,1,MS,1,0,0,0,1,0,1
+65477945,Stinkbug,Turtle,Musk,1,Unknown,1,Scale,0,0,0,1,1,MS,0,1,0,1,0,0,1
+65477635,Mrs. Turtle,Turtle,Turtle,3,Female,2,Unknown,0,0,0,1,1,DC,1,1,1,0,0,0,0
+65477633,Mr. Turtle,Turtle,Turtle,3,Female,2,Unknown,0,0,0,0,1,DC,1,0,0,0,0,1,1
+65477264,MONTE,Turtle,Turtle,3,Unknown,1,Unknown,0,0,1,0,1,CA,1,0,0,0,0,1,0
+65477115,Big'N,Turtle,Box,3,Male,1,Scale,0,1,0,0,1,MS,0,0,0,1,0,1,0
+65477088,Ariel,Turtle,Yellow-Bellied Slider,3,Female,3,Scale,0,0,1,0,1,OH,1,0,0,1,0,1,0
+65477011,Eugene,Turtle,Box,3,Male,1,Scale,0,0,0,1,1,MS,1,1,1,1,0,1,0
+65476983,Lawrence,Turtle,Box,3,Male,1,Scale,0,0,0,0,1,MS,0,1,0,0,1,0,0
+65476976,Delbert,Turtle,Box,3,Male,1,Scale,0,0,0,1,1,MS,0,0,0,0,1,1,0
+65476936,Ned,Turtle,Box,3,Male,1,Scale,0,0,0,1,1,MS,1,1,1,1,0,0,1
+65476924,Bodie,Turtle,Box,3,Male,1,Scale,0,0,1,1,1,MS,0,1,1,0,0,0,1
+65476573,Basil,Turtle,Red-Eared Slider,3,Male,2,Scale,0,1,0,1,1,MS,0,1,1,0,1,1,1
+65476486,Kip,Turtle,Three-Toed Box,3,Male,1,Scale,0,0,0,1,1,MS,0,1,0,0,0,1,0
+65476474,Mason,Turtle,Three-Toed Box,3,Male,1,Scale,0,0,0,0,1,MS,1,1,1,1,0,0,0
+65476423,Trevor,Turtle,Three-Toed Box,3,Male,1,Scale,0,1,1,1,1,MS,1,0,1,0,1,0,1
+65476352,Haley,Turtle,Three-Toed Box,3,Female,1,Scale,0,0,0,0,0,MS,1,0,1,1,1,0,1
+65472460,Mocha,Snake,Snake,4,Male,2,Scale,0,0,0,1,0,OH,0,0,0,0,0,1,1
+65472461,Bugs,Reptile,Lizard,3,Male,2,Scale,0,0,1,0,0,OH,0,0,0,1,0,0,0
+65471900,Poliwag,Reptile,Gecko,3,Female,1,Scale,0,0,0,0,0,NC,0,0,0,0,0,1,0
+65470392,Honey,Reptile,Lizard,3,Female,1,Scale,0,0,1,1,0,CA,1,1,0,1,0,1,1
+65469370,Astro,Reptile,Gecko,3,Male,1,Scale,0,0,0,0,0,NC,0,1,1,1,0,0,1
+65468947,Lily,Snake,Corn / Rat,3,Female,2,Scale,0,0,0,1,0,CA,1,1,0,1,1,0,0
+65468920,Rusty,Snake,Corn / Rat,3,Male,2,Scale,0,0,1,0,1,CA,0,0,0,0,0,1,1
+65660622,SQUIGGLES,Pig,Pig,3,Female,3,Short,0,0,1,1,0,CA,0,1,0,0,0,0,0
+65658945,PINK-BLACK,Pig,Pig,3,Male,4,Short,0,0,0,0,0,OK,1,1,1,1,0,0,1
+65646631,Oliver aka Wilbur A047132,Pig,Pig,2,Male,2,Short,0,0,0,1,0,GA,1,1,0,0,1,0,0
+65638137,Joaquin,Sheep,Sheep,2,Male,2,Wool,0,1,1,1,1,WA,1,1,0,1,1,1,0
+65633846,Pumba,Pig,Pig,3,Male,2,Short,0,0,0,0,0,WA,0,0,1,1,0,0,0
+65627729,Nanny: Posted only for information,Goat,Goat,2,Female,2,Short,0,0,0,0,1,VA,0,0,0,0,0,1,0
+65615000,MILK,Goat,Goat,1,Male,2,Short,0,0,1,1,1,CO,1,1,1,0,0,0,0
+65615002,CHEESE,Goat,Goat,1,Male,2,Short,0,0,0,0,1,CO,0,0,0,1,1,0,1
+65602967,Ariel,Pig,Pig,3,Female,1,Short,0,0,0,0,1,PA,0,0,0,0,1,0,0
+65600982,Magnus,Goat,Goat,2,Male,2,Short,0,0,1,1,1,WV,0,1,0,0,0,0,0
+65600694,Arlo,Goat,Goat,3,Male,2,Short,0,0,0,0,1,PA,0,0,0,1,0,0,1
+65600695,Salsa,Goat,Goat,4,Female,2,Short,0,0,0,0,1,PA,0,0,1,0,1,1,1
+65600693,Bono,Goat,Goat,3,Male,2,Short,0,0,0,1,1,PA,0,1,0,1,0,1,1
+65597831,Goats (4) 1M&3F,Goat,Goat,3,Female,2,Short,0,0,1,0,1,FL,1,1,0,1,1,0,1
+65586107,Cub,Pot Bellied,Pot Bellied,1,Male,3,Short,0,0,0,1,1,TX,1,1,0,0,0,0,0
+65585924,Digby,Pot Bellied,Pot Bellied,2,Male,3,Short,0,0,0,0,1,TX,1,1,1,0,1,0,0
+65585608,Smalls,Pot Bellied,Pot Bellied,1,Male,3,Short,0,0,1,0,1,TX,0,1,0,0,0,0,1
+65584934,Socks ,Pot Bellied,Pot Bellied,2,Female,3,Short,0,0,0,0,1,TX,1,1,0,0,1,1,0
+65584920,Navarro,Pot Bellied,Pot Bellied,2,Male,3,Short,0,0,0,1,1,TX,0,0,0,0,0,0,1
+65584894,Wesley,Pot Bellied,Pot Bellied,2,Male,3,Short,0,0,1,0,1,TX,0,0,0,1,1,0,1
+65584811,Stunt,Pig,Pig,2,Male,3,Short,0,0,0,0,1,TX,1,1,0,0,0,1,0
+65583289,MARIO,Goat,Goat,3,Male,2,Short,0,0,0,1,1,CA,0,0,1,1,1,0,0
+65582723,Batman,Pig,Pig,4,Male,2,Short,0,0,0,0,1,UT,1,1,1,1,0,0,1
+65558626,*Cheese*,Goat,Goat,3,Male,2,Short,0,0,1,0,1,UT,0,1,0,1,0,1,0
+65557726,PANDA,Goat,Goat,2,Male,1,Short,0,0,0,1,1,MD,0,0,0,0,0,0,0
+65557615,Red Stripe & Rona,Goat,Nigerian Dwarf,2,Male,2,Short,0,0,0,1,1,NC,0,0,1,0,1,0,0
+65540964,CHIEF CHUBS,Pig,Pig,3,Male,4,Short,0,0,1,1,1,OH,1,0,0,0,0,0,0
+65521268,Lancelot,Pig,Pig,1,Male,2,Short,0,0,0,1,1,FL,1,0,1,1,1,0,0
+65521267,Guinevere,Pig,Pig,1,Female,2,Short,0,0,0,0,1,FL,1,1,1,1,1,0,0
+65512056,Louie,Pot Bellied,Pot Bellied,3,Male,2,Short,0,1,1,1,1,OH,0,0,0,0,0,0,0
+65498633,pygmy,Goat,Nigerian Dwarf,1,Male,1,Short,0,0,1,1,1,MD,0,1,0,1,0,0,0
+65486967,COFFEE,Goat,Goat,3,Female,2,Short,0,0,0,1,1,MA,0,0,1,1,1,0,1
+65480112,CLOVER,Pig,Pig,2,Female,2,Short,0,0,0,1,1,MA,0,0,0,0,1,0,1
+65402606,Camira / Moko,Goat,Goat,2,Female,2,Short,0,0,0,1,1,UT,1,0,0,1,1,0,0
+65398482,Nike,Pig,Pig,2,Female,3,Short,0,0,1,1,1,MD,0,0,1,0,0,1,0
+65397117,PORKYPIG,Pig,Pig,2,Male,2,Short,0,0,0,0,1,CA,0,0,0,0,0,0,0
+65397038,LECHONK,Pig,Pig,2,Male,2,Short,0,0,0,1,1,CA,0,0,1,0,1,1,0
+65394547,FENDER,Goat,Goat,3,Male,2,Short,0,0,1,1,1,MO,0,0,0,0,0,1,1
+65393292,BABE,Pig,Pig,3,Male,3,Short,0,0,0,1,0,MA,0,0,0,0,0,1,0
+65389516,"Elvis, Emmitt, and Freya",Goat,Nigerian Dwarf,2,Male,1,Short,0,0,1,1,0,PA,0,1,0,0,0,1,0
+65367624,Luna,Pig,Pig,2,Female,2,Short,0,0,1,1,1,FL,1,1,1,1,0,0,1
+65363953,Mini pixie tea cup micro PIG,Pot Bellied,Pot Bellied,3,Female,3,Short,1,0,1,1,1,NV,0,1,0,1,0,1,0
+65354535,Professor Truffles,Pot Bellied,Pot Bellied,4,Male,4,Short,0,1,1,1,1,CA,0,0,1,0,1,0,0
+65336077,Homer,Pig,Pig,1,Male,2,Short,0,0,0,1,0,AR,1,1,1,0,0,1,1
+65309181,Nigerian Pigmy Bucks,Goat,Nigerian Dwarf,2,Male,1,Short,0,0,1,1,1,MD,1,1,0,0,0,1,1
+65308281,Este,Pig,Pig,3,Female,2,Short,0,0,0,1,0,TX,0,0,1,1,0,0,1
+65308365,Pumbaa,Pig,Pig,3,Male,2,Short,0,0,0,1,0,TX,0,0,1,0,0,1,1
+65308148,Romeo,Pig,Pig,3,Male,2,Short,0,0,0,1,1,TX,0,0,0,0,0,0,0
+65308233,Trouble,Pig,Pig,3,Male,2,Short,0,0,0,1,0,TX,1,1,1,0,1,1,0
+65308064,Grump,Pig,Pig,3,Male,2,Short,0,0,0,1,0,TX,0,1,1,0,0,1,1
+65308163,Slick,Pig,Pig,3,Male,2,Short,0,0,0,1,0,TX,0,0,1,1,1,1,0
+65308107,Lina,Pig,Pig,3,Female,2,Short,0,0,0,1,1,TX,1,1,0,0,0,0,1
+65308226,Boss,Pig,Pig,3,Male,2,Short,0,0,0,1,0,TX,0,0,1,0,1,0,0
+65275574,Livestock,Pig,Pig,3,Female,3,Short,0,0,0,1,0,CA,1,0,1,0,0,0,0
+65232218,GARY,Alpaca,Alpaca,4,Male,4,Wool,0,0,1,1,1,MO,0,0,1,0,0,1,0
+65214883,Betty,Goat,Goat,3,Female,2,Short,0,0,0,1,1,NY,1,0,0,0,1,0,1
+65211526,Walter and Finn,Goat,Pygmy,2,Male,1,Short,0,0,1,1,0,PA,0,0,0,1,1,1,0
+65153259,GIBSON,Goat,Goat,3,Male,4,Short,0,0,0,1,1,MO,1,0,1,0,0,0,0
+65092442,"Marty, Bear, Nugget & Oinky",Pot Bellied,Pot Bellied,2,Male,2,Short,0,0,1,1,1,PA,0,1,1,1,1,0,0
+65077814,Harley,Pig,Pig,2,Male,2,Short,0,0,0,1,1,NC,0,0,1,1,1,0,0
+65075668,Blossom,Pig,Pig,2,Female,1,Short,0,0,0,1,0,UT,1,0,0,0,0,0,0
+65075667,Smalls,Pig,Pig,2,Male,1,Short,0,0,0,1,0,UT,0,0,0,1,0,1,0
+65075663,Mardi,Pig,Pig,2,Female,1,Short,0,0,0,1,0,UT,0,0,0,0,0,1,1
+65075665,Tiger,Pig,Pig,2,Female,1,Short,0,0,0,1,1,UT,0,0,0,1,1,0,0
+65009323,Goatee Locks,Goat,Goat,2,Female,2,Short,0,0,0,1,1,PA,0,0,1,0,1,0,0
+64971672,Annie,Goat,Goat,4,Female,1,Short,0,0,1,1,1,UT,0,0,0,0,0,0,0
+64971671,Gerty,Pig,Pig,2,Female,1,Short,0,0,0,1,0,UT,1,0,1,1,1,0,1
+64901942,Mama Ollum,Pig,Pig,3,Female,3,Short,1,0,1,1,1,WA,0,0,0,0,0,0,1
+64901946,Pepper,Pot Bellied,Pot Bellied,1,Male,1,Short,1,0,1,1,1,WA,0,0,0,0,1,1,0
+64901949,Parsley,Pot Bellied,Pot Bellied,1,Male,1,Short,1,0,1,1,1,WA,1,0,0,0,0,0,0
+64901948,Sage,Pot Bellied,Pot Bellied,1,Female,1,Short,1,0,1,1,1,WA,1,0,0,0,1,1,0
+64901945,Ginger,Pot Bellied,Pot Bellied,1,Female,1,Short,1,0,1,1,1,WA,1,1,1,0,0,0,1
+64901943,Herb,Pot Bellied,Pot Bellied,1,Male,1,Short,1,0,1,1,1,WA,1,0,1,0,1,1,1
+64901947,Dill,Pot Bellied,Pot Bellied,1,Male,1,Short,1,0,1,1,1,WA,1,1,0,1,1,0,0
+64871842,POSY,Pig,Pig,2,Female,3,Short,0,0,1,1,1,MO,0,0,1,1,0,1,1
+64871843,POSH,Pig,Pig,2,Female,3,Short,0,0,1,1,1,MO,0,1,1,0,0,0,0
+64856369,Boots,Goat,Nigerian Dwarf,1,Male,1,Short,0,0,1,1,1,OK,0,0,1,0,1,0,1
+64802352,Doug,Pig,Pig,3,Male,2,Short,0,0,1,1,1,NY,0,1,1,0,1,0,0
+64800830,DUNN,Goat,Goat,1,Male,1,Short,0,0,1,1,1,MO,0,0,0,0,0,0,0
+64800831,BROOKS,Goat,Goat,1,Male,1,Short,0,0,1,1,1,MO,0,1,1,0,1,0,0
+64800833,MARSHALL,Goat,Goat,3,Male,4,Short,0,0,0,1,1,MO,1,0,0,1,0,0,0
+64733404,Dozer,Cow,Angus,2,Male,3,Short,0,0,0,1,1,WA,0,1,1,0,0,1,0
+64733214,PeeWee,Cow,Cow,3,Male,3,Short,0,0,1,1,1,WA,0,1,0,0,1,1,1
+64732989,Dandelion,Cow,Cow,3,Male,2,Short,0,0,1,1,1,WA,0,1,0,0,0,1,1
+64732635,Tiger Lily,Cow,Cow,3,Female,3,Short,0,0,0,1,1,WA,0,0,1,0,0,0,0
+64732407,Heman,Cow,Cow,3,Male,3,Short,0,0,1,1,1,WA,0,0,0,0,0,0,0
+50959322,Midnight,Pot Bellied,Vietnamese Pot Bellied,2,Male,2,Short,0,0,1,1,1,GA,0,1,0,0,0,0,0
+64725642,Little Dude,Pot Bellied,Vietnamese Pot Bellied,3,Male,3,Short,0,0,1,1,1,GA,0,0,1,0,1,0,0
+64725615,Chip,Pot Bellied,Vietnamese Pot Bellied,3,Male,3,Short,0,0,1,1,1,GA,1,0,0,0,1,1,1
+64721196,HENDRIX,Goat,Goat,3,Male,3,Short,0,0,1,1,1,MO,0,1,0,1,0,1,1
+64659222,PLOPPER,Pig,Pig,2,Male,2,Short,0,0,0,1,1,CA,1,1,0,0,0,0,0
+64628611,Agnes Henrietta,Pig,Pig,2,Female,2,Short,0,0,1,1,1,FL,1,0,1,1,0,1,1
+64618490,GEORGE*,Pig,Pig,3,Male,1,Short,0,0,1,1,1,CA,0,0,1,1,0,0,0
+64618491,MUMMY PIG*,Pig,Pig,3,Female,2,Short,0,0,1,1,1,CA,1,0,0,0,0,1,1
+64615360,Livestock,Pig,Pig,3,Male,3,Short,0,0,1,1,1,CA,0,0,0,1,0,1,0
+64614747,Tango and Romeo,Pot Bellied,Pot Bellied,2,Male,2,Short,1,0,1,1,1,NY,1,0,0,1,1,0,1
+64614663,Rambo and Sarge,Pot Bellied,Pot Bellied,2,Male,2,Short,1,0,1,1,1,NY,0,1,1,0,0,1,1
+64611908,Peter Porker,Pig,Pig,3,Male,2,Short,0,0,1,1,1,CA,1,0,0,1,0,0,0
+64590296,Timon (black with white feet) Pumba (all black),Pig,Pig,2,Male,2,Short,0,0,1,1,1,IN,0,0,1,1,0,0,1
+64590241,Miss Piggy,Pig,Pig,2,Female,2,Short,0,0,1,1,1,IN,1,0,1,0,0,0,0
