@@ -1,5 +1,4 @@
-var data, averages, svg, x, y, g, breedSvg, breedX, breedY, breedG, breedData;
-var color = d3.scaleOrdinal(d3.schemeCategory10);
+var data, averages, svg, x, y, g, breedSvg, breedX, breedY, breedG, breedData, color;
 
 // Load data and create bar chart
 d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
@@ -34,6 +33,22 @@ d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
   x.domain(averages.map(function(d) { return d.key; }));
   y.domain([0, d3.max(averages, function(d) { return d.value.id_count; })]);
 
+  var species = [...new Set(data.map(d => d.species))];
+
+  
+  color = d3.scaleOrdinal()
+  .domain(species)
+  .range(d3.schemeCategory10.map(function(color) {
+    var hsl = d3.hsl(color);
+    hsl.s *= 0.8;  // Reduce the saturation
+    hsl.l *= 1.2;  // Increase the lightness
+    // Ensure lightness does not exceed 1
+    if (hsl.l > 1) {
+      hsl.l = 1;
+    }
+    return hsl.toString();
+  }));
+
   var xAxis = g.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
@@ -57,70 +72,89 @@ d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
       .text("Count of ID");
 
       g.selectAll(".bar")
-      .data(averages)
-      .enter().append("rect")
-      .attr("class", "bar")
-      .attr("x", function(d) { return x(d.key); })
-      .attr("y", function(d) { return y(d.value.id_count); })
-      .attr("width", x.bandwidth())
-      .attr("height", function(d) { return height - y(d.value.id_count); })
-      .style("fill", function(d, i) { return color(i); })
-      .on('mouseover', function(d, i) { d3.select(this).style('fill', color(i)); })
-      .on('mouseout', function(d, i) { d3.select(this).style('fill', color(i)); })
-      .on('click', function(d) { 
-          // When a bar is clicked, call a function to create a new chart 
-          createBreedChart(d.key); 
-      })
-      .append("title")  // Append a title element to each rect
-      .text(function(d) { return "ID Count: " + d.value.id_count; });  // Set the title text as the id count
+  .data(averages)
+  .enter().append("rect")
+  .attr("class", "bar")
+  .attr("x", function(d) { return x(d.key); })
+  .attr("y", function(d) { return y(d.value.id_count); })
+  .attr("width", x.bandwidth())
+  .attr("height", function(d) { return height - y(d.value.id_count); })
+  .style("fill", function(d) { return color(d.key); })
+  .style("cursor", "pointer")  // add this line
+  .on('mouseover', function(d, i) { 
+    d3.select(this).style('fill', d3.rgb(color(d.key)).brighter(0.5)); 
+  })
+  .on('mouseout', function(d, i) { 
+    d3.select(this).style('fill', color(d.key)); 
+  })
+  .on('click', function(d) { 
+    createBreedChart(d.key); 
+  })
+  .append("title")  // Append a title element to each rect
+  .text(function(d) { return "ID Count: " + d.value.id_count; });
+
     
 });
 
 function createBreedChart(species) {
-    // Filter the data for the selected species
-    breedData = data.filter(function(d) { return d.species === species; });
-    breedData = d3.nest()
-      .key(function(d) { return d.breed; })
-      .rollup(function(v) { return v.length; })  // Count the IDs for each breed
-      .entries(breedData);
+  // Filter the data for the selected species
+  breedData = data.filter(function(d) { return d.species === species; });
+  breedData = d3.nest()
+    .key(function(d) { return d.breed; })
+    .rollup(function(v) { return v.length; })  // Count the IDs for each breed
+    .entries(breedData);
+
+  var width = 360;
+  var height = 360;
+  var radius = Math.min(width, height) / 2;
   
-    var width = 1000;
-    var height = 400;
-    var radius = Math.min(width, height) / 2;
-    
-    var svg = d3.select("#scene2")
-      .select('svg')
-      .attr('width', width)
-      .attr('height', height);
-  
-    // Clear the SVG
-    svg.selectAll("*").remove();
-  
-    var g = svg.append('g')
-      .attr('transform', 'translate(' + (width / 2) + 
-        ',' + (height / 2) + ')');
-  
-    var arc = d3.arc()
-      .innerRadius(0)
-      .outerRadius(radius);
-  
-    var pie = d3.pie()
-      .value(function(d) { return d.value; })
-      .sort(null);
-  
-    var path = g.selectAll('path')
-      .data(pie(breedData))
-      .enter()
-      .append('path')
-      .attr('d', arc)
-      .attr('fill', function(d, i) { 
-        return color(i); 
-      });
-  
-    // Add tooltips
-    path.append('title')
-      .text(function(d) { return d.data.key + ": " + d.data.value; });
-  }
+  var svg = d3.select("#scene2")
+    .select('svg')
+    .attr('width', width)
+    .attr('height', height);
+
+  // Clear the SVG
+  svg.selectAll("*").remove();
+
+  var g = svg.append('g')
+    .attr('transform', 'translate(' + (width / 2) + ',' + (height / 2) + ')');
+
+  var arc = d3.arc()
+    .innerRadius(0)
+    .outerRadius(radius);
+
+  var arcOver = d3.arc()
+    .innerRadius(0)
+    .outerRadius(radius + 10);
+
+  var pie = d3.pie()
+    .value(function(d) { return d.value; })
+    .sort(null);
+
+  var path = g.selectAll('path')
+    .data(pie(breedData))
+    .enter()
+    .append('path')
+    .attr('d', arc)
+    .attr('fill', function(d) { return color(d.data.key); })
+    .style("cursor", "pointer")
+    .on("mouseover", function(d) {
+      d3.select(this).transition()
+          .duration(500)
+          .attr("d", arcOver);  // Use the larger arc for the mouseover effect
+    })
+    .on("mouseout", function(d) {
+      d3.select(this).transition()
+          .duration(500)
+          .attr("d", arc);  // Transition back to the smaller arc
+    });
+
+  // Add tooltips
+  path.append('title')
+    .text(function(d) { return d.data.key + ": " + d.data.value; });
+}
+
+
   
   
 
