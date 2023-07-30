@@ -22,55 +22,21 @@ body {
     margin: 20px auto; /* centering the container horizontally */
   }
   
-  .axis text {
-    font: 10px sans-serif;
-  }
-  
-  .axis path,
-  .axis line {
-    fill: none;
-    stroke: #000;
-    shape-rendering: crispEdges;
-  }
-  
-  .x.axis path {
-    display: none;
-  }
-  
-  .question-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-  }
-  
-  .question-container h2 {
-    margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
-  }
-  
   .option-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap; /* to handle overflow */
+    justify-content: flex-start; /* align items to the left */
   }
   
   .option-container input[type="radio"],
-  .option-container input[type="checkbox"] {
-    margin: 0 10px 10px 0;
-  }
-  
+  .option-container input[type="checkbox"],
   .option-container label {
-    margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
+    margin-right: 20px; /* increase the space between the elements */
   }
   
   .option-container select,
   .option-container input[type="range"] {
-    width: 100%;
+    width: 50%; /* reduce the width of the slider and select */
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -85,7 +51,6 @@ body {
   .slider {
     -webkit-appearance: none;
     appearance: none;
-    width: 100%;
     height: 15px;
     border-radius: 5px;  
     background: #d3d3d3;
@@ -115,25 +80,5 @@ body {
     border-radius: 50%;
     background: #4CAF50;
     cursor: pointer;
-  }
-  
-  /* Add this CSS to style the navigation circles */
-.question-navigation {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .question-navigation .nav-circle {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #bbb;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  .question-navigation .nav-circle.active {
-    background-color: #333;
   }
   

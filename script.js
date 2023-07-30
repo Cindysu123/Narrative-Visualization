@@ -89,12 +89,25 @@ d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
   })
   .on('click', function(d) { 
     createBreedChart(d.key); 
+    updateSpeciesList(d.key);
   })
   .append("title")  // Append a title element to each rect
   .text(function(d) { return "ID Count: " + d.value.id_count; });
 
     
 });
+
+function updateSpeciesList(species) {
+  var speciesListDiv = document.getElementById('speciesList');
+  
+  // Clear the div
+  speciesListDiv.innerHTML = "";
+
+  // Add the new species
+  var p = document.createElement('p');
+  p.textContent = species;
+  speciesListDiv.appendChild(p);
+}
 
 function createBreedChart(species) {
   // Filter the data for the selected species
@@ -258,7 +271,7 @@ function submitAnswer() {
 
     // In the bar chart creation part of the code
     g.selectAll(".bar")
-    .data(averages)
+    .data(filteredAverages)
     .enter().append("rect")
     .attr("class", "bar")
     .attr("x", function(d) { return x(d.key); })
