@@ -8,14 +8,6 @@ body {
     justify-content: center;
     align-items: center;
   }
-
-  .question-container {
-    display: none;
-  }
-
-  .question-container.active {
-    display: block;
-  }
   
   .question-container {
     display: flex;
@@ -123,5 +115,25 @@ body {
     border-radius: 50%;
     background: #4CAF50;
     cursor: pointer;
+  }
+  
+  /* Add this CSS to style the navigation circles */
+.question-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .question-navigation .nav-circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .question-navigation .nav-circle.active {
+    background-color: #333;
   }
   

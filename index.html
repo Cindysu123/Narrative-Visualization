@@ -5,6 +5,9 @@
   <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
+    <button id="previousButton" onclick="previousQuestion()" disabled>Previous Question</button>
+    <button id="nextButton" onclick="nextQuestion()">Next Question</button>
+    
   <div class="question-container">
     <h2>Do you have children?</h2>
     <div class="option-container">
@@ -15,7 +18,7 @@
     </div>
   </div>
 
-  <div class="question-container">
+  <div class="question-container question-hidden">
     <h2>Do you have a cat?</h2>
     <div class="option-container">
       <input type="radio" id="cats_yes" name="cats" value="yes" onclick="submitAnswer()">
@@ -25,7 +28,7 @@
     </div>
   </div>
 
-  <div class="question-container">
+  <div class="question-container question-hidden">
     <h2>Do you have a dog?</h2>
     <div class="option-container">
       <input type="radio" id="dogs_yes" name="dogs" value="yes" onclick="submitAnswer()">
@@ -35,7 +38,7 @@
     </div>
   </div>
 
-  <div class="question-container">
+  <div class="question-container question-hidden">
     <h2>What type of coat do you prefer for your pet? (Select all that apply)</h2>
     <div class="option-container">
       <input type="checkbox" id="coat_short" name="coat" value="Short" onclick="submitAnswer()">
@@ -55,7 +58,7 @@
     </div>
   </div>
 
-  <div class="question-container">
+  <div class="question-container question-hidden">
     <h2>What attributes do you prefer in your pet? (Select all that apply)</h2>
     <div class="option-container">
       <input type="checkbox" id="attr_affectionate" name="attr" value="Affectionate" onclick="submitAnswer()">
@@ -81,7 +84,7 @@
     </div>
   </div>
 
-  <div class="question-container">
+  <div class="question-container question-hidden">
     <h2>What size pet are you looking for?</h2>
     <div class="option-container">
       <select id="sizeRange" onchange="submitAnswer()">
@@ -107,5 +110,6 @@
   </div>
 
   <script src="script.js"></script>
+  <script src="questionController.js"></script>
 </body>
 </html>
