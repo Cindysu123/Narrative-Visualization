@@ -1,4 +1,5 @@
 var data, averages, svg, x, y, g, breedSvg, breedX, breedY, breedG, breedData;
+var color = d3.scaleOrdinal(d3.schemeCategory10);
 
 // Load data and create bar chart
 d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
@@ -17,6 +18,7 @@ d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
 
   // Sort in descending order of id count
   averages.sort(function(a, b) { return b.value.id_count - a.value.id_count; });
+
 
   svg = d3.select("svg"),
       margin = {top: 20, right: 20, bottom: 70, left: 40},
@@ -62,8 +64,9 @@ d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
       .attr("y", function(d) { return y(d.value.id_count); })
       .attr("width", x.bandwidth())
       .attr("height", function(d) { return height - y(d.value.id_count); })
-      .on('mouseover', function() { d3.select(this).style('fill', 'darkblue'); })
-      .on('mouseout', function() { d3.select(this).style('fill', 'steelblue'); })
+      .style("fill", function(d, i) { return color(i); })
+      .on('mouseover', function(d, i) { d3.select(this).style('fill', color(i)); })
+      .on('mouseout', function(d, i) { d3.select(this).style('fill', color(i)); })
       .on('click', function(d) { 
           // When a bar is clicked, call a function to create a new chart 
           createBreedChart(d.key); 
@@ -74,62 +77,52 @@ d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
 });
 
 function createBreedChart(species) {
-  // Filter the data for the selected species
-  breedData = data.filter(function(d) { return d.species === species; });
-  breedData = d3.nest()
-    .key(function(d) { return d.breed; })
-    .rollup(function(v) { return v.length; })  // Count the IDs for each breed
-    .entries(breedData);
-
-  // Sort in descending order of id count
-  breedData.sort(function(a, b) { return b.value - a.value; });
-
-  breedSvg = d3.select("#breedSvg"),
-  breedWidth = +breedSvg.attr("width") - margin.left - margin.right,
-  breedHeight = +breedSvg.attr("height") - margin.top - margin.bottom;
-
-  breedX = d3.scaleBand().rangeRound([0, breedWidth]).padding(0.1),
-  breedY = d3.scaleLinear().rangeRound([breedHeight, 0]);
-
-  breedG = breedSvg.append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-  breedX.domain(breedData.map(function(d) { return d.key; }));
-  breedY.domain([0, d3.max(breedData, function(d) { return d.value; })]);
-
-  var breedXAxis = breedG.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + breedHeight + ")")
-      .call(d3.axisBottom(breedX));
-
-  // Rotate labels
-  breedXAxis.selectAll("text")
-    .style("text-anchor", "end")
-    .attr("dx", "-.8em")
-    .attr("dy", ".15em")
-    .attr("transform", "rotate(-45)");
-
-  breedG.append("g")
-      .attr("class", "y axis")
-      .call(d3.axisLeft(breedY)) // Removed the "%" argument
-    .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", "0.71em")
-      .attr("text-anchor", "end")
-      .text("Count of ID");
-
-  breedG.selectAll(".bar")
-    .data(breedData)
-    .enter().append("rect")
-      .attr("class", "bar")
-      .attr("x", function(d) { return breedX(d.key); })
-      .attr("y", function(d) { return breedY(d.value); })
-      .attr("width", breedX.bandwidth())
-      .attr("height", function(d) { return breedHeight - breedY(d.value); })
-      .append("title")  // Append a title element to each rect
-      .text(function(d) { return "ID Count: " + d.value; });  // Set the title text as the id count
-}
+    // Filter the data for the selected species
+    breedData = data.filter(function(d) { return d.species === species; });
+    breedData = d3.nest()
+      .key(function(d) { return d.breed; })
+      .rollup(function(v) { return v.length; })  // Count the IDs for each breed
+      .entries(breedData);
+  
+    var width = 1000;
+    var height = 400;
+    var radius = Math.min(width, height) / 2;
+    
+    var svg = d3.select("#scene2")
+      .select('svg')
+      .attr('width', width)
+      .attr('height', height);
+  
+    // Clear the SVG
+    svg.selectAll("*").remove();
+  
+    var g = svg.append('g')
+      .attr('transform', 'translate(' + (width / 2) + 
+        ',' + (height / 2) + ')');
+  
+    var arc = d3.arc()
+      .innerRadius(0)
+      .outerRadius(radius);
+  
+    var pie = d3.pie()
+      .value(function(d) { return d.value; })
+      .sort(null);
+  
+    var path = g.selectAll('path')
+      .data(pie(breedData))
+      .enter()
+      .append('path')
+      .attr('d', arc)
+      .attr('fill', function(d, i) { 
+        return color(i); 
+      });
+  
+    // Add tooltips
+    path.append('title')
+      .text(function(d) { return d.data.key + ": " + d.data.value; });
+  }
+  
+  
 
 function submitAnswer() {
     var childrenAnswer = document.querySelector('input[name="children"]:checked') ? document.querySelector('input[name="children"]:checked').value : null;
@@ -140,6 +133,7 @@ function submitAnswer() {
     var sizeRange = document.getElementById('sizeRange').value;
     var ageRange = document.getElementById('ageRange').value;
     document.getElementById("ageValue").innerHTML = ageRange;
+
 
     // Clear the old bars
     g.selectAll(".bar").remove();
@@ -228,19 +222,23 @@ function submitAnswer() {
     // Clear the old bars
     g.selectAll(".bar").remove();
 
-    // Draw the new bars
+    // In the bar chart creation part of the code
     g.selectAll(".bar")
-      .data(filteredAverages)
-      .enter().append("rect")
-        .attr("class", "bar")
-        .attr("x", function(d) { return x(d.key); })
-        .attr("y", function(d) { return y(d.value.id_count); })
-        .attr("width", x.bandwidth())
-        .attr("height", function(d) { return height - y(d.value.id_count); })
-        .append("title")  // Append a title element to each rect
-        .text(function(d) { return "ID Count: " + d.value.id_count; });  // Set the title text as the id count
+    .data(averages)
+    .enter().append("rect")
+    .attr("class", "bar")
+    .attr("x", function(d) { return x(d.key); })
+    .attr("y", function(d) { return y(d.value.id_count); })
+    .attr("width", x.bandwidth())
+    .attr("height", function(d) { return height - y(d.value.id_count); })
+    .style("fill", function(d, i) { return color(i); })
+    .on('mouseover', function(d, i) { d3.select(this).style('fill', color(i)); })
+    .on('mouseout', function(d, i) { d3.select(this).style('fill', color(i)); })
+    .on('click', function(d) { 
+        // When a bar is clicked, call a function to create a new chart 
+        createBreedChart(d.key); 
+    })
+    .append("title")  // Append a title element to each rect
+    .text(function(d) { return "ID Count: " + d.value.id_count; });  // Set the title text as the id count
+
 }
-  
-  
-  
-  
