@@ -138,6 +138,8 @@ function submitAnswer() {
     var coatAnswers = Array.from(document.querySelectorAll('input[name="coat"]:checked')).map(e => e.value);
     var attrAnswers = Array.from(document.querySelectorAll('input[name="attr"]:checked')).map(e => e.value);
     var sizeRange = document.getElementById('sizeRange').value;
+    var ageRange = document.getElementById('ageRange').value;
+    document.getElementById("ageValue").innerHTML = ageRange;
 
     // Clear the old bars
     g.selectAll(".bar").remove();
@@ -177,15 +179,20 @@ function submitAnswer() {
     }
 
     // Filter the data for the selected size
-    if (sizeRange == 30) {
-      filteredData = filteredData.filter(function(d) { return d.size >= 28 && d.size <= 30; });
-    } else if (sizeRange == 28) {
-      filteredData = filteredData.filter(function(d) { return d.size >= 20 && d.size < 28; });
-    } else if (sizeRange == 20) {
-      filteredData = filteredData.filter(function(d) { return d.size >= 6 && d.size < 20; });
-    } else if (sizeRange == 10) {
-      filteredData = filteredData.filter(function(d) { return d.size >= 0 && d.size < 6; });
+    if (sizeRange == "any") {
+        // Do not filter the data by size
+    } else if (sizeRange == "30") {
+        filteredData = filteredData.filter(function(d) { return d.size >= 28 && d.size <= 30; });
+    } else if (sizeRange == "28") {
+        filteredData = filteredData.filter(function(d) { return d.size >= 20 && d.size < 28; });
+    } else if (sizeRange == "20") {
+        filteredData = filteredData.filter(function(d) { return d.size >= 6 && d.size < 20; });
+    } else if (sizeRange == "10") {
+        filteredData = filteredData.filter(function(d) { return d.size >= 0 && d.size < 6; });
     }
+
+    // Filter the data for the selected age range
+    filteredData = filteredData.filter(function(d) { return d.age <= ageRange; });
   
     // Generate averages
     filteredAverages = d3.nest()
