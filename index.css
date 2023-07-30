@@ -7,7 +7,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+    background-color: #fcf2dc; /* Added background color */
+}
   
   .question-container {
     display: flex;
@@ -97,7 +98,7 @@ body {
   }
 
   button {
-    background-color: #4CAF50;
+    background-color: #fdc072; /* Modified button color */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -110,16 +111,15 @@ body {
     border-radius: 4px;
     width: 120px;
     transition: all 0.3s ease;
-  }
-  
-  button:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
-  }
+}
 
-  button:hover{
-    color: #4CAF50;
+button:hover{
+    color: #fdc072; /* Modified hover text color to match button color */
     background-color: white;
-  }
+}
   
+.subtext {
+    font-size: 0.8em;
+    color: #666;
+}
   

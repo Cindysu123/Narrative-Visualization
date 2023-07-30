@@ -1,9 +1,10 @@
 // Initialize global variables
-var data, averages, svg, x, y, g, breedSvg, breedX, breedY, breedG, breedData, color;
+var data, averages, svg, x, y, g, breedSvg, breedX, breedY, breedG, breedData, color, filteredData;
 
 // Load data and create bar chart
 d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
   data = loadedData;
+  filteredData = data; // Add this line
 
   averages = d3.nest()
     .key(function(d) { return d.species; })
@@ -34,17 +35,10 @@ d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
   y.domain([0, d3.max(averages, function(d) { return d.value.id_count; })]);
 
   var species = [...new Set(data.map(d => d.species))];
+  var barColors = ["#f4e2ce", "#db7858", "#eacfc4", "#f1b89b", "#d98e6f", "#fed8c3", "#ffbeaa", "#d9796c", "#eac0a8", "#f1ae79", "#c4884a","#b8cecc","#9fb4b5", "#87abab", "#b3b689", "#d6dbd7", "#d7bdc0", "#7c5e60", "#a15d64", "#3a615e", "#647f6e", "#5b6d55", "#7a8b67", "#334a50", "#b2b7a0", "#8e9989", "#d3b054", "#bca86d", "#f2d076"];
   color = d3.scaleOrdinal()
   .domain(species)
-  .range(d3.schemeCategory10.map(function(color) {
-    var hsl = d3.hsl(color);
-    hsl.s *= 0.8;
-    hsl.l *= 1.2;
-    if (hsl.l > 1) {
-      hsl.l = 1;
-    }
-    return hsl.toString();
-  }));
+  .range(barColors);
 
   var xAxis = g.append("g")
       .attr("class", "x axis")
@@ -112,16 +106,18 @@ function updateTop3Pets(petData) {
   // Add new top 3 pets
   top3.forEach(function(pet, i) {
     top3Div.append("p")
-      .text((i + 1) + ". " + pet.key + " - Count: " + pet.value.id_count);
+      .text((i + 1) + ". " + pet.key);
   });
 }
 
 function createBreedChart(species) {
-  breedData = data.filter(function(d) { return d.species === species; });
+  breedData = filteredData.filter(function(d) { return d.species === species; }); // Change data to filteredData
   breedData = d3.nest()
     .key(function(d) { return d.breed; })
     .rollup(function(v) { return v.length; })  
     .entries(breedData);
+
+  var totalCount = d3.sum(breedData, function(d) { return d.value; }); // calculate total count
 
   var width = 520;
   var height = 380;
@@ -154,24 +150,53 @@ function createBreedChart(species) {
 
   var pie = d3.pie()
     .value(function(d) { return d.value; })
-    .sort(null);
+    .sort(function(a, b) { return b.value - a.value; });
+  
+  var pieColors = ["#f4e2ce", "#db7858", "#eacfc4", "#f1b89b", "#d98e6f", "#fed8c3", "#ffbeaa", "#d9796c", "#eac0a8", "#f1ae79", "#c4884a","#b8cecc","#9fb4b5", "#87abab", "#b3b689", "#d6dbd7", "#d7bdc0", "#7c5e60", "#a15d64", "#3a615e", "#647f6e", "#5b6d55", "#7a8b67", "#334a50", "#b2b7a0", "#8e9989", "#d3b054", "#bca86d", "#f2d076"];
+  var pieColor = d3.scaleOrdinal()
+    .domain(breedData)
+    .range(pieColors);
 
   var path = g.selectAll('path')
     .data(pie(breedData))
     .enter()
     .append('path')
     .attr('d', arc)
-    .attr('fill', function(d) { return color(d.data.key); });
+    .attr('fill', function(d) { return pieColor(d.data.key); })
+    .each(function(d, i) {
+        if (i === -1) {
+            var centroid = arc.centroid(d);
+            g.append("text")
+                .attr("x", centroid[0])
+                .attr("y", centroid[1])
+                .attr("text-anchor", "middle")
+                .style("font-size", "16px")
+                .text(d.data.key);
+        }
+    });
 
   path.append('title')
-    .text(function(d) { return d.data.key + ": " + d.data.value; });
+    .text(function(d) { return d.data.key + ": " + ((d.data.value / totalCount) * 100).toFixed(2) + "%"; }); // display percentage
 
-  path.on("mouseover", function(d) {
-    d3.select(this).attr("d", arcOver);
+  path.on("mouseover", function() {
+    d3.select(this)
+      .transition()
+      .duration(200) // duration of transition in milliseconds
+      .attr("d", arcOver);
   })
-  .on("mouseout", function(d) {
-    d3.select(this).attr("d", arc);
+  .on("mouseout", function() {
+    d3.select(this)
+      .transition()
+      .duration(200) // duration of transition in milliseconds
+      .attr("d", arc);
   });
+
+  var maxBreed = breedData[0];
+  for (var i = 1; i < breedData.length; i++) {
+    if (breedData[i].value > maxBreed.value) {
+      maxBreed = breedData[i];
+    }
+  }
 
   var legendRectSize = 18;
   var legendSpacing = 4;
@@ -191,14 +216,21 @@ function createBreedChart(species) {
   legend.append('rect')
     .attr('width', legendRectSize)
     .attr('height', legendRectSize)
-    .style('fill', function(d) { return color(d.data.key); })
-    .style('stroke', function(d) { return color(d.data.key); });
+    .style('fill', function(d) { return pieColor(d.data.key); })
+    .style('stroke', function(d) { return pieColor(d.data.key); });
 
   legend.append('text')
     .attr('x', legendRectSize + legendSpacing)
     .attr('y', legendRectSize - legendSpacing)
     .text(function(d) { return d.data.key; });
+
+  svg.append("text")
+  .attr("transform", "translate(" + (width / 2 - 50) + "," + (height / 2 + 20) + ")")
+  .attr("text-anchor", "middle")
+  .style("font-size", "16px") 
+  
 }
+
 
 function submitAnswer() {
   var childrenAnswer = document.querySelector('input[name="children"]:checked') ? document.querySelector('input[name="children"]:checked').value : null;
@@ -212,7 +244,8 @@ function submitAnswer() {
 
   g.selectAll(".bar").remove();
 
-  var filteredData = data;
+  filteredData = data;
+  
   if (childrenAnswer === "yes") {
     filteredData = filteredData.filter(function(d) { return d.children >= 0.5; });
   }
@@ -296,4 +329,9 @@ function submitAnswer() {
 
   // Update top 3 pets
   updateTop3Pets(filteredAverages);
+
+  // Update the breed chart based on the first species in the sorted averages
+  if (filteredAverages.length > 0) {
+    createBreedChart(filteredAverages[0].key);
+  }
 }
