@@ -89,7 +89,6 @@ d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
   })
   .on('click', function(d) { 
     createBreedChart(d.key); 
-    updateSpeciesList(d.key);
   })
   .append("title")  // Append a title element to each rect
   .text(function(d) { return "ID Count: " + d.value.id_count; });
@@ -97,40 +96,33 @@ d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
     
 });
 
-function updateSpeciesList(species) {
-  var speciesListDiv = document.getElementById('speciesList');
-  
-  // Clear the div
-  speciesListDiv.innerHTML = "";
-
-  // Add the new species
-  var p = document.createElement('p');
-  p.textContent = species;
-  speciesListDiv.appendChild(p);
-}
-
 function createBreedChart(species) {
-  // Filter the data for the selected species
   breedData = data.filter(function(d) { return d.species === species; });
   breedData = d3.nest()
     .key(function(d) { return d.breed; })
-    .rollup(function(v) { return v.length; })  // Count the IDs for each breed
+    .rollup(function(v) { return v.length; })  
     .entries(breedData);
 
-  var width = 360;
-  var height = 360;
-  var radius = Math.min(width, height) / 2;
+  var width = 520;
+  var height = 380;
+  var radius = Math.min(width, height) / 2.8;
   
   var svg = d3.select("#scene2")
     .select('svg')
-    .attr('width', width)
-    .attr('height', height);
-
-  // Clear the SVG
+    .attr("width", width)
+    .attr("height", height);
+  
   svg.selectAll("*").remove();
 
   var g = svg.append('g')
-    .attr('transform', 'translate(' + (width / 2) + ',' + (height / 2) + ')');
+    .attr('transform', 'translate(' + (width / 2 - 50) + ',' + (height / 2 + 20) + ')');
+    
+  svg.append("text")
+  .attr("transform", "translate("+ (width / 2 - 50) +",30)")
+  .attr("text-anchor", "middle")
+  .style("font-size", "16px") 
+  .style("text-decoration", "underline")  
+  .text("Breed Distribution in " + species);
 
   var arc = d3.arc()
     .innerRadius(0)
@@ -149,23 +141,47 @@ function createBreedChart(species) {
     .enter()
     .append('path')
     .attr('d', arc)
-    .attr('fill', function(d) { return color(d.data.key); })
-    .style("cursor", "pointer")
-    .on("mouseover", function(d) {
-      d3.select(this).transition()
-          .duration(500)
-          .attr("d", arcOver);  // Use the larger arc for the mouseover effect
-    })
-    .on("mouseout", function(d) {
-      d3.select(this).transition()
-          .duration(500)
-          .attr("d", arc);  // Transition back to the smaller arc
-    });
-
-  // Add tooltips
+    .attr('fill', function(d) { return color(d.data.key); });
+  
   path.append('title')
     .text(function(d) { return d.data.key + ": " + d.data.value; });
+  
+    path.on("mouseover", function(d) {
+    d3.select(this).attr("d", arcOver);
+  })
+  .on("mouseout", function(d) {
+    d3.select(this).attr("d", arc);
+  });
+
+
+  var legendRectSize = 18;                                  
+  var legendSpacing = 4;                                   
+  
+  var legend = svg.selectAll('.legend')                        
+    .data(pie(breedData))                                   
+    .enter()
+    .append('g')                                            
+    .attr('class', 'legend')                                
+    .attr('transform', function(d, i) {
+      var height = legendRectSize + legendSpacing;          
+      var offset =  height * color.domain().length / 2;     
+      var horz = width - legendRectSize - 130;                   
+      var vert = i * height + (height / 2) + 40;                       
+      return 'translate(' + horz + ',' + vert + ')';        
+    });                                                     
+
+legend.append('rect')                                     
+    .attr('width', legendRectSize)                          
+    .attr('height', legendRectSize)                         
+    .style('fill', function(d) { return color(d.data.key); })                                 
+    .style('stroke', function(d) { return color(d.data.key); });                                
+
+legend.append('text')                                     
+    .attr('x', legendRectSize + legendSpacing)              
+    .attr('y', legendRectSize - legendSpacing)              
+    .text(function(d) { return d.data.key; });                                         
 }
+
 
 
   
