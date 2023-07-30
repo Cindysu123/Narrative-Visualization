@@ -240,29 +240,6 @@ function submitAnswer() {
         .append("title")  // Append a title element to each rect
         .text(function(d) { return "ID Count: " + d.value.id_count; });  // Set the title text as the id count
 }
-
-window.onload = function() {
-    // get all question containers
-    var questionContainers = Array.from(document.getElementsByClassName('question-container'));
-    
-    // initialize first question container to be active
-    questionContainers[0].classList.add('active');
-
-    window.submitAnswer = function() {
-      // find the currently active question container
-      var activeIndex = questionContainers.findIndex(function(container) {
-        return container.classList.contains('active');
-      });
-
-      // remove 'active' class from current question container
-      questionContainers[activeIndex].classList.remove('active');
-
-      // add 'active' class to next question container
-      if (activeIndex + 1 < questionContainers.length) {
-        questionContainers[activeIndex + 1].classList.add('active');
-      }
-    };
-}
   
   
   
