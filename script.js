@@ -129,41 +129,68 @@ function createBreedChart(species) {
 }
 
 function submitAnswer() {
-  var childrenAnswer = document.querySelector('input[name="children"]:checked') ? document.querySelector('input[name="children"]:checked').value : null;
-  var catsAnswer = document.querySelector('input[name="cats"]:checked') ? document.querySelector('input[name="cats"]:checked').value : null;
-  var dogsAnswer = document.querySelector('input[name="dogs"]:checked') ? document.querySelector('input[name="dogs"]:checked').value : null;
-
-  // Clear the old bars
-  g.selectAll(".bar").remove();
-
-  var filteredAverages = averages;
-
-  // Filter based on children answer
-  if (childrenAnswer === "yes") {
-    // Remove species with average children value less than 0.5
-    filteredAverages = filteredAverages.filter(function(d) { return d.value.children >= 0.5; });
+    var childrenAnswer = document.querySelector('input[name="children"]:checked') ? document.querySelector('input[name="children"]:checked').value : null;
+    var catsAnswer = document.querySelector('input[name="cats"]:checked') ? document.querySelector('input[name="cats"]:checked').value : null;
+    var dogsAnswer = document.querySelector('input[name="dogs"]:checked') ? document.querySelector('input[name="dogs"]:checked').value : null;
+    var coatAnswers = Array.from(document.querySelectorAll('input[name="coat"]:checked')).map(e => e.value);
+  
+    // Clear the old bars
+    g.selectAll(".bar").remove();
+  
+    var filteredData = data;
+  
+    // Filter based on children answer
+    if (childrenAnswer === "yes") {
+      // Remove species with average children value less than 0.5
+      filteredData = filteredData.filter(function(d) { return d.children >= 0.5; });
+    }
+  
+    // Filter based on cats answer
+    if (catsAnswer === "yes") {
+      // Remove species with average cats value less than 0.2
+      filteredData = filteredData.filter(function(d) { return d.cats >= 0.2; });
+    }
+  
+    // Filter based on dogs answer
+    if (dogsAnswer === "yes") {
+      // Remove species with average dogs value less than 0.2
+      filteredData = filteredData.filter(function(d) { return d.dogs >= 0.2; });
+    }
+  
+    // Filter based on coat answer
+    if (coatAnswers.length > 0) {
+      // Filter the data for the selected coat types
+      filteredData = filteredData.filter(function(d) { return coatAnswers.includes(d.coat); });
+    }
+  
+    // Generate averages
+    filteredAverages = d3.nest()
+      .key(function(d) { return d.species; })
+      .rollup(function(v) { 
+        return {
+          id_count: v.length,
+          children: d3.mean(v, function(d) { return d.children; }),
+          cats: d3.mean(v, function(d) { return d.cats; }),
+          dogs: d3.mean(v, function(d) { return d.dogs; })
+        };
+      })
+      .entries(filteredData);
+  
+    // Sort in descending order of id count
+    filteredAverages.sort(function(a, b) { return b.value.id_count - a.value.id_count; });
+  
+    g.selectAll(".bar")
+      .data(filteredAverages)
+      .enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", function(d) { return x(d.key); })
+        .attr("y", function(d) { return y(d.value.id_count); })
+        .attr("width", x.bandwidth())
+        .attr("height", function(d) { return height - y(d.value.id_count); })
+        .append("title")  // Append a title element to each rect
+        .text(function(d) { return "ID Count: " + d.value.id_count; });  // Set the title text as the id count
   }
-
-  // Filter based on cats answer
-  if (catsAnswer === "yes") {
-    // Remove species with average cats value less than 0.2
-    filteredAverages = filteredAverages.filter(function(d) { return d.value.cats >= 0.2; });
-  }
-
-  // Filter based on dogs answer
-  if (dogsAnswer === "yes") {
-    // Remove species with average dogs value less than 0.2
-    filteredAverages = filteredAverages.filter(function(d) { return d.value.dogs >= 0.2; });
-  }
-
-  g.selectAll(".bar")
-    .data(filteredAverages)
-    .enter().append("rect")
-      .attr("class", "bar")
-      .attr("x", function(d) { return x(d.key); })
-      .attr("y", function(d) { return y(d.value.id_count); })
-      .attr("width", x.bandwidth())
-      .attr("height", function(d) { return height - y(d.value.id_count); })
-      .append("title")  // Append a title element to each rect
-      .text(function(d) { return "ID Count: " + d.value.id_count; });  // Set the title text as the id count
-}
+  
+  
+  
+  
