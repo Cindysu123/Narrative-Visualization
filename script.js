@@ -209,7 +209,26 @@ function submitAnswer() {
   
     // Sort in descending order of id count
     filteredAverages.sort(function(a, b) { return b.value.id_count - a.value.id_count; });
-  
+
+    // Update x and y domains
+    x.domain(filteredAverages.map(function(d) { return d.key; }));
+    y.domain([0, d3.max(filteredAverages, function(d) { return d.value.id_count; })]);
+
+    // Redraw the axes
+    g.select(".x.axis")
+      .transition()
+      .duration(1000)
+      .call(d3.axisBottom(x));
+
+    g.select(".y.axis")
+      .transition()
+      .duration(1000)
+      .call(d3.axisLeft(y));
+
+    // Clear the old bars
+    g.selectAll(".bar").remove();
+
+    // Draw the new bars
     g.selectAll(".bar")
       .data(filteredAverages)
       .enter().append("rect")
