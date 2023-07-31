@@ -1,11 +1,22 @@
-// Initialize global variables
-var data, averages, svg, x, y, g, breedSvg, breedX, breedY, breedG, breedData, color, filteredData;
+var data, averages, svg, x, y, g, breedSvg, breedX, breedY, breedG, breedData, color, filteredData, filteredAverages, us;
 
-// Load data and create bar chart
+var width = 700,
+    height = 300;
+
+var projection = d3.geoAlbersUsa()
+    .translate([width / 2, height / 2])
+    .scale(width);
+
+var path = d3.geoPath()
+    .projection(projection);
+
+var svg = d3.select("#scene3").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
 d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
   data = loadedData;
-  filteredData = data; // Add this line
-
+  filteredData = data; 
   averages = d3.nest()
     .key(function(d) { return d.species; })
     .rollup(function(v) { 
@@ -66,9 +77,9 @@ d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
   .enter().append("rect")
   .attr("class", "bar")
   .attr("x", function(d) { return x(d.key); })
-  .attr("y", function(d) { return y(0); }) // start y at 0
+  .attr("y", function(d) { return y(0); })
   .attr("width", x.bandwidth())
-  .attr("height", function(d) { return 0; }) // start height at 0
+  .attr("height", function(d) { return 0; })
   .style("fill", function(d) { return color(d.key); })
   .style("cursor", "pointer")
   .on('mouseover', function(d, i) { 
@@ -83,7 +94,6 @@ d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
   .append("title")
   .text(function(d) { return "ID Count: " + d.value.id_count; });
 
-  // Add transition to bars
   g.selectAll(".bar")
   .transition()
   .duration(800)
@@ -91,19 +101,59 @@ d3.csv("petfinder_data_modified_new.csv").then(function(loadedData) {
   .attr("height", function(d) { return height - y(d.value.id_count); })
   .delay(function(d,i){ return(i*100) });
 
-  // List top three pets
-  updateTop3Pets(filteredAverages);
+  if(filteredAverages.length > 0) { 
+    updateTop3Pets(filteredAverages);
+  }
+
+}).catch(function(error) {
+  console.log("Error loading CSV data: ", error);
 });
 
+d3.json("us_states.json").then(function(loadedUs) {
+  us = loadedUs;
+
+    drawMap(us, filteredData);
+
+  }).catch(function(error) {
+    console.log("Error loading GeoJSON data: ", error);
+  });
+
+  function drawMap(us, filteredData) {
+    var petCounts = d3.nest()
+      .key(function(d) { return d.state; })
+      .rollup(function(v) { return v.length; })
+      .object(filteredData);
+  
+    var color = d3.scaleSequential(d3.interpolate("#deb887", "#8b4513"))
+        .domain([0, d3.max(Object.values(petCounts))]);
+  
+    d3.select("#scene3").select("svg").remove();
+  
+    d3.select("#scene3").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .selectAll("path")
+    .data(us.features) 
+    .enter().append("path")
+    .attr("d", path)
+    .style("fill", function(d) {
+      var count = petCounts[d.id];
+      return count ? color(count) : "#ccc";
+    })
+    .append("title")
+    .text(function(d) {
+      var count = petCounts[d.id];
+      return count ? count + " pets" : "No data";
+    });
+  }
+
+
 function updateTop3Pets(petData) {
-  // Clear old top 3 pets
   var top3Div = d3.select("#top3");
   top3Div.selectAll("p").remove();
 
-  // Get new top 3 pets
   var top3 = petData.slice(0, 3);
 
-  // Add new top 3 pets
   top3.forEach(function(pet, i) {
     top3Div.append("p")
       .text((i + 1) + ". " + pet.key);
@@ -111,7 +161,7 @@ function updateTop3Pets(petData) {
 }
 
 function createBreedChart(species) {
-  breedData = filteredData.filter(function(d) { return d.species === species; }); // Change data to filteredData
+  breedData = filteredData.filter(function(d) { return d.species === species; });
   breedData = d3.nest()
     .key(function(d) { return d.breed; })
     .rollup(function(v) { return v.length; })  
@@ -140,7 +190,7 @@ function createBreedChart(species) {
   var arc = d3.arc()
     .innerRadius(0)
     .outerRadius(radius)
-    .padAngle(0.02); // add padding between sectors
+    .padAngle(0.02);
 
   var arcOver = d3.arc()
     .innerRadius(0)
@@ -179,13 +229,13 @@ function createBreedChart(species) {
   path.on("mouseover", function() {
     d3.select(this)
       .transition()
-      .duration(200) // duration of transition in milliseconds
+      .duration(200)
       .attr("d", arcOver);
   })
   .on("mouseout", function() {
     d3.select(this)
       .transition()
-      .duration(200) // duration of transition in milliseconds
+      .duration(200)
       .attr("d", arc);
   });
 
@@ -317,19 +367,18 @@ function submitAnswer() {
   .append("title")
   .text(function(d) { return "ID Count: " + d.value.id_count; });
 
-  // Add transition to new bars
   bars.transition()
   .duration(800)
   .attr("y", function(d) { return y(d.value.id_count); })
   .attr("height", function(d) { return height - y(d.value.id_count); })
   .delay(function(d,i){ return(i*100) });
 
-  // Update top 3 pets
   updateTop3Pets(filteredAverages);
 
-  // Update the breed chart based on the first species in the sorted averages
   if (filteredAverages.length > 0) {
     createBreedChart(filteredAverages[0].key);
   }
+
+  drawMap(us, filteredData);
 
 }

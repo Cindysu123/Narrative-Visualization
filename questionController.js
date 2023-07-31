@@ -1,23 +1,15 @@
-// questionController.js
-
-// Global variable to keep track of the current question index
 let currentQuestionIndex = 0;
 
-// Function to show the current question based on the index
 function showQuestion() {
-    // Hide all questions
     const questions = document.querySelectorAll('.question-container');
     questions.forEach((question) => question.style.display = 'none');
   
-    // Show the question with the current index
     questions[currentQuestionIndex].style.display = 'block';
   
-    // Change the color of the current circle
     const circles = document.querySelectorAll('.navbar ul li');
-    circles.forEach((circle) => circle.style.backgroundColor = '#696969');  // Reset color
-    circles[currentQuestionIndex].style.backgroundColor = '#fdc072';  // Highlight current circle
+    circles.forEach((circle) => circle.style.backgroundColor = '#696969');
+    circles[currentQuestionIndex].style.backgroundColor = '#fdc072';
   
-    // Disable/Enable previous and next buttons based on the current question index
     const previousButton = document.getElementById('previousButton');
     const nextButton = document.getElementById('nextButton');
   
@@ -34,22 +26,17 @@ function showQuestion() {
     }
   }
   
-
-// Function to handle the click event when the user wants to switch to the next question
 function nextQuestion() {
   currentQuestionIndex++;
   if (currentQuestionIndex >= document.querySelectorAll('.question-container').length) {
-    // If there are no more questions, reset the index to 0
     currentQuestionIndex = 0;
   }
   showQuestion();
 }
 
-// Function to handle the click event when the user wants to switch to the previous question
 function previousQuestion() {
   currentQuestionIndex--;
   if (currentQuestionIndex < 0) {
-    // If the user is at the first question, loop back to the last question
     currentQuestionIndex = document.querySelectorAll('.question-container').length - 1;
   }
   showQuestion();
@@ -60,5 +47,4 @@ function goToQuestion(index) {
     showQuestion();
   }
 
-// Show the first question on page load
 showQuestion();
