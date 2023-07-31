@@ -164,3 +164,31 @@ body {
     color: #666;
 }
   
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    overflow-x: auto;
+  }  
+
+
+#scene3 svg {
+    max-width: 100%;
+}
+
+#scene3 {
+    overflow: auto;
+}
+
+#info{
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+  

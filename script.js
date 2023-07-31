@@ -121,31 +121,55 @@ d3.json("us_states.json").then(function(loadedUs) {
   function drawMap(us, filteredData) {
     var petCounts = d3.nest()
       .key(function(d) { return d.state; })
+      .key(function(d) { return d.species; })
       .rollup(function(v) { return v.length; })
-      .object(filteredData);
+      .entries(filteredData);
+    
+    var petCountsObj = {};
+    petCounts.forEach(function(d) {
+      petCountsObj[d.key] = {};
+      d.values.forEach(function(e) {
+        petCountsObj[d.key][e.key] = e.value;
+      });
+    });
   
     var color = d3.scaleSequential(d3.interpolate("#deb887", "#8b4513"))
-        .domain([0, d3.max(Object.values(petCounts))]);
-  
+      .domain([0, d3.max(petCounts, function(d) { return d3.sum(d.values, function(e) { return e.value; }); })]);
+    
     d3.select("#scene3").select("svg").remove();
+    
+    // Create tooltip div
+    var info = d3.select("#info");
   
-    d3.select("#scene3").append("svg")
-    .attr("width", width)
-    .attr("height", height)
-    .selectAll("path")
-    .data(us.features) 
-    .enter().append("path")
-    .attr("d", path)
-    .style("fill", function(d) {
-      var count = petCounts[d.id];
-      return count ? color(count) : "#ccc";
-    })
-    .append("title")
-    .text(function(d) {
-      var count = petCounts[d.id];
-      return count ? count + " pets" : "No data";
-    });
+    var svg = d3.select("#scene3").append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .selectAll("path")
+      .data(us.features) 
+      .enter().append("path")
+      .attr("d", path)
+      .style("fill", function(d) {
+        var count = petCountsObj[d.id] ? d3.sum(Object.values(petCountsObj[d.id])) : 0;
+        return count ? color(count) : "#ccc";
+      })
+      .on("mouseover", function(d) {
+        var count = petCountsObj[d.id];
+        var stateName = d.properties.name;
+        var html = "<strong>" + stateName + "</strong><br>";
+        html += count 
+            ? Object.keys(count)
+                .sort(function(a, b) { return count[b] - count[a]; })
+                .map(function(species) { return species + ": " + count[species] + " pets"; })
+                .join("<br>") 
+            : "No data";
+        
+        info.html(html);
+    })            
+      .on("mouseout", function(d) {
+        info.html("");
+      });
   }
+  
 
 
 function updateTop3Pets(petData) {
